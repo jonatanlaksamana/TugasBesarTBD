@@ -14,8 +14,9 @@ class Alteralltable extends Migration
     public function up()
     {
         DB::statement('ALTER TABLE `mengajar` ADD FOREIGN KEY (`idJadwal`) REFERENCES `jadwals`(`id`) ON DELETE RESTRICT ON UPDATE RESTRICT; ');
-        DB::statement('ALTER TABLE `mengajar` ADD FOREIGN KEY (`idJadwal`) REFERENCES `jadwals`(`id`) ON DELETE RESTRICT ON UPDATE RESTRICT; ');
-    
+        DB::statement('ALTER TABLE `mengajar` ADD FOREIGN KEY (`idUser`) REFERENCES `Users`(`id`) ON DELETE RESTRICT ON UPDATE RESTRICT; ');
+        DB::statement('ALTER TABLE `jadwals` ADD FOREIGN KEY (`idMk`) REFERENCES `MataKuliah`(`id`) ON DELETE RESTRICT ON UPDATE RESTRICT; ');
+        DB::statement('ALTER TABLE `jadwals` ADD FOREIGN KEY (`idRoom`) REFERENCES `Ruangan`(`idRoom`) ON DELETE RESTRICT ON UPDATE RESTRICT; ');
     }
 
     /**
