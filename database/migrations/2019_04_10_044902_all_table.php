@@ -19,7 +19,7 @@ class AllTable extends Migration
             nama varchar(50)
         )');
         DB::statement('create table Ruangan (
-            idRoom int primary key ,
+            idRoom varchar(50) primary key ,
             jumlahMhs int
         )');
         DB::statement('create table MataKuliah (
@@ -32,7 +32,7 @@ class AllTable extends Migration
             idMk int,
             type int,
             hari int,
-            idRoom int,
+            idRoom varchar(50),
             timeStart time,
             timeEnd time
         )');
