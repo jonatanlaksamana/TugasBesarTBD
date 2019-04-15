@@ -11,4 +11,5 @@
 |
 */
 
-Route::get('/', 'indexcontroller@index');
+// Route::get('/', 'indexcontroller@index');
+Route::get('/senin' , 'JadwalController@index')->name('jadwal.senin');
