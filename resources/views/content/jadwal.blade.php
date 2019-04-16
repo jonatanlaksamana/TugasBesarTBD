@@ -6,6 +6,26 @@
 
     <h1 class="text--xl">Schedule Template</h1>
   </header>
+  <nav>
+  <ul>
+    <a href="#" class="skew-wrapper orange-outline">
+      <li class="unskew">SENIN</li>
+    </a>
+    <a href="#" class="skew-wrapper orange-outline">
+      <li class="unskew">SELASA</li>
+    </a>
+    <a href="#" class="skew-wrapper orange-outline">
+      <li class="unskew">RABU</li>
+    </a>
+    <a href="#" class="skew-wrapper orange-outline">
+      <li class="unskew">KAMIS</li>
+    </a>
+    <a href="#" class="skew-wrapper orange-outline">
+      <li class="unskew">JUMAT</li>
+    </a>
+
+  </ul>
+</nav>
 
   <div class="cd-schedule cd-schedule--loading margin-top--lg margin-bottom--lg js-cd-schedule">
     <div class="cd-schedule__timeline">

@@ -9,6 +9,7 @@
     <!-- <link rel="stylesheet" href="{{asset('/css/util.css')}}"> -->
     <script>document.getElementsByTagName("html")[0].className += " js";</script>
     <link rel="stylesheet" href="{{asset('/css/style.css')}}">
+    <link rel="stylesheet" href="{{asset('/css/button.css')}}">
     <title>Jadwal Mengajar</title>
 
     

@@ -1,0 +1,67 @@
+.skew-wrapper {
+    width: 150px;
+    height: 50px;
+    display: inline-block;
+    transform: skew(-30deg);
+    overflow: hidden;
+    border-radius: 5px;
+    margin-left: 7%;
+  }
+  
+  .orange-filled {
+    background-color: #ee6900;
+    color: #191919;
+    transition: all 150ms ease-in-out;
+  }
+  
+  .orange-outline {
+    box-sizing: border-box;
+    border: 2px solid #ee6900;
+    color: #ee6900;
+    transition: all 150ms ease-in-out;
+  }
+  
+  .skew-wrapper,
+  .skew-wrapper:focus,
+  .skew-wrapper:active,
+  .skew-wrapper:visited {
+    outline: none;
+  }
+  
+  .orange-outline:hover {
+    background-color: #ee6900;
+  }
+  
+  .orange-filled:hover {
+    background-color: #ff7a00;
+  }
+  
+  .orange-filled:active {
+    background-color: #dd5700;
+  }
+  
+  .orange-outline li:hover {
+    color: #fff;
+  }
+  
+  .orange-outline:active {
+    background-color: #dd5700;
+  }
+  
+  .unskew {
+    transform: skew(30deg);
+    line-height: 50px;
+  }
+  
+  li {
+    text-align: center;
+    font-style: normal;
+    list-style: none;
+  }
+  
+  a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 300;
+    margin: 0 .25em;
+  }
