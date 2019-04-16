@@ -221,7 +221,7 @@ class Seeder extends Migration
             ['idRoom' =>'SB-918' ,'jumlahMhs'=>0]
         );
 
-
+        //senin
         DB::table('jadwals')->insert(
             ['id'=>1,'idMk'=>5,'type'=>0,'hari'=>1,'idRoom'=>'9120','timeStart'=>'07:00:00','timeEnd'=>'10:00:00']
         );
@@ -289,6 +289,52 @@ class Seeder extends Migration
             ['id'=>22,'idMk'=>37,'type'=>0,'hari'=>1,'idRoom'=>'SB-918','timeStart'=>'10:00:00','timeEnd'=>'13:00:00']
         );
 
+        //selasa
+        DB::table('jadwals')->insert(
+            ['id'=>23,'idMk'=>1,'type'=>0,'hari'=>2,'idRoom'=>'9122','timeStart'=>'07:00:00','timeEnd'=>'09:00:00']
+        );
+        DB::table('jadwals')->insert(
+            ['id'=>24,'idMk'=>37,'type'=>0,'hari'=>2,'idRoom'=>'10316','timeStart'=>'07:00:00','timeEnd'=>'09:00:00']
+        );
+        DB::table('jadwals')->insert(
+            ['id'=>25,'idMk'=>15,'type'=>0,'hari'=>2,'idRoom'=>'10317','timeStart'=>'07:00:00','timeEnd'=>'09:00:00']
+        );
+        DB::table('jadwals')->insert(
+            ['id'=>26,'idMk'=>16,'type'=>0,'hari'=>2,'idRoom'=>'SB914','timeStart'=>'07:00:00','timeEnd'=>'10:00:00']
+        );
+        DB::table('jadwals')->insert(
+            ['id'=>27,'idMk'=>14,'type'=>0,'hari'=>2,'idRoom'=>'9122','timeStart'=>'09:00:00','timeEnd'=>'11:00:00']
+        );
+        DB::table('jadwals')->insert(
+            ['id'=>28,'idMk'=>14,'type'=>0,'hari'=>2,'idRoom'=>'10316','timeStart'=>'09:00:00','timeEnd'=>'11:00:00']
+        );
+        DB::table('jadwals')->insert(
+            ['id'=>29,'idMk'=>14,'type'=>0,'hari'=>2,'idRoom'=>'10317','timeStart'=>'09:00:00','timeEnd'=>'11:00:00']
+        );
+        DB::table('jadwals')->insert(
+            ['id'=>30,'idMk'=>17,'type'=>0,'hari'=>2,'idRoom'=>'10322','timeStart'=>'09:00:00','timeEnd'=>'11:00:00']
+        );
+        DB::table('jadwals')->insert(
+            ['id'=>31,'idMk'=>19,'type'=>0,'hari'=>2,'idRoom'=>'SB915','timeStart'=>'11:00:00','timeEnd'=>'14:00:00']
+        );
+        DB::table('jadwals')->insert(
+            ['id'=>32,'idMk'=>17,'type'=>0,'hari'=>2,'idRoom'=>'9122','timeStart'=>'13:00:00','timeEnd'=>'15:00:00']
+        );
+        DB::table('jadwals')->insert(
+            ['id'=>33,'idMk'=>6,'type'=>1,'hari'=>2,'idRoom'=>'10316','timeStart'=>'13:00:00','timeEnd'=>'15:00:00']
+        );
+        DB::table('jadwals')->insert(
+            ['id'=>34,'idMk'=>20,'type'=>1,'hari'=>2,'idRoom'=>'SB-915','timeStart'=>'14:00:00','timeEnd'=>'17:00:00']
+        );
+        DB::table('jadwals')->insert(
+            ['id'=>35,'idMk'=>21,'type'=>1,'hari'=>2,'idRoom'=>'SB-916','timeStart'=>'13:00:00','timeEnd'=>'16:00:00']
+        );
+        DB::table('jadwals')->insert(
+            ['id'=>36,'idMk'=>3,'type'=>1,'hari'=>2,'idRoom'=>'SB-917','timeStart'=>'15:00:00','timeEnd'=>'17:00:00']
+        );
+        DB::table('jadwals')->insert(
+            ['id'=>37,'idMk'=>3,'type'=>1,'hari'=>2,'idRoom'=>'SB-918','timeStart'=>'15:00:00','timeEnd'=>'17:00:00']
+        );
 
         DB::table('mengajar')->insert(
             ['idJadwal'=>10,'idUser'=>1]
