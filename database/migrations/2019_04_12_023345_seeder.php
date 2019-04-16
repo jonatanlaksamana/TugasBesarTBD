@@ -176,7 +176,9 @@ class Seeder extends Migration
         DB::table('matakuliah')->insert(
             ['id' => 37, 'name' =>'Pemrograman Komputer','semester'=>6]
         );
-        
+        DB::table('matakuliah')->insert(
+            ['id' => 38, 'name' =>'Analisis Design Perangkat Lunak','semester'=>6]
+        );
 
 
         DB::table('ruangan')->insert(
@@ -285,6 +287,14 @@ class Seeder extends Migration
         );
         DB::table('jadwals')->insert(
             ['id'=>22,'idMk'=>37,'type'=>0,'hari'=>1,'idRoom'=>'SB-918','timeStart'=>'10:00:00','timeEnd'=>'13:00:00']
+        );
+
+
+        DB::table('mengajar')->insert(
+            ['idJadwal'=>10,'idUser'=>1]
+        );
+        DB::table('mengajar')->insert(
+            ['idJadwal'=>13,'idUser'=>1]
         );
     }
 

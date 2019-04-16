@@ -16,7 +16,10 @@ class AllProcedure extends Migration
         //
 //        contoh
         DB::unprepared("DROP procedure IF EXISTS getUser");
-        DB::unprepared('create procedure getUser() select * from users');
+        DB::unprepared('
+        create procedure getUser() select * from users
+
+        ');
 
         
 

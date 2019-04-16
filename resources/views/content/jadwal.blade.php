@@ -14,9 +14,11 @@
 	  	<li><span>07:30</span></li>
         <li><span>08:00</span></li>
         
-		<li><span>08:30</span></li>
-		<li><span>09:00</span></li>
-		<li><span>09:30</span></li>
+		    <li><span>08:30</span></li>
+        <li><span>09:00</span></li>
+        <li><span>09:30</span></li>
+        <li><span>10:00</span></li>
+		    
         <li><span>10:30</span></li>
         <li><span>11:00</span></li>
         <li><span>11:30</span></li>
@@ -31,8 +33,8 @@
         <li><span>16:00</span></li>
         <li><span>16:30</span></li>
         <li><span>17:00</span></li>
-        <li><span>17:30</span></li>
-        <li><span>18:00</span></li>
+        {{-- <li><span>17:30</span></li>
+        <li><span>18:00</span></li> --}}
       </ul>
     </div> <!-- .cd-schedule__timeline -->
 	
@@ -45,7 +47,7 @@
 			 @foreach($allJadwal as $jadwal)
             <li class="cd-schedule__event">
               <a data-start="{{$jadwal->timeStart}}" data-end="{{$jadwal->timeEnd}}" data-content="event-abs-circuit" data-event="event-1" href="#0">
-                <em class="cd-schedule__name">{{$jadwal->idMk}}</em>
+                <em class="cd-schedule__name">{{$jadwal->name}}</em>
               </a>
 			</li>
 			

@@ -10,9 +10,30 @@ class JadwalModel extends Model
     //
     protected $table = 'jadwals';
 
-    public static function getAll(){
-        return   DB::select('select * from jadwals  where hari = 1 and idRoom  like 10316');
+    public static function getAll( ){
+        // return   DB::select('
+
+        // select 
+        //     jadwals.*,
+        //     matakuliah.name 
+        // from 
+        //     jadwals inner join matakuliah on matakuliah.id = jadwals.idMk  
+        // where 
+        //     hari = 1 and idRoom like 10316');
+
+        return DB::select(
+            'select 
+                jadwals.*,
+                matakuliah.name  
+            from 
+                jadwals inner join matakuliah on matakuliah.id = jadwals.idMk  
+            where 
+                hari = 1 and idRoom like ?', [10316]);
+    
+           // return view('user.index', ['users' => $users]);
     }
+
+     
 
     // public static function parent()
     // {

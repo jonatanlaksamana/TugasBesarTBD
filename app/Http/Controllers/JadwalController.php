@@ -10,5 +10,6 @@ class JadwalController extends Controller
     public function index(){
         $allJadwal = JadwalModel::getAll();
         return view('content.jadwal' , compact('allJadwal'));
+
     }
 }
