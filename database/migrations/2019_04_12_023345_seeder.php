@@ -336,14 +336,69 @@ class Seeder extends Migration
             ['id'=>35,'idMk'=>21,'type'=>1,'hari'=>2,'idRoom'=>'SB-916','timeStart'=>'13:00:00','timeEnd'=>'16:00:00']
         );
         DB::table('jadwals')->insert(
-            ['id'=>36,'idMk'=>3,'type'=>1,'hari'=>2,'idRoom'=>'SB-917','timeStart'=>'15:00:00','timeEnd'=>'17:00:00']
+            ['id'=>36,'idMk'=>37,'type'=>1,'hari'=>2,'idRoom'=>'SB-918','timeStart'=>'13:00:00','timeEnd'=>'15:00:00']
         );
         DB::table('jadwals')->insert(
-            ['id'=>37,'idMk'=>3,'type'=>1,'hari'=>2,'idRoom'=>'SB-918','timeStart'=>'15:00:00','timeEnd'=>'17:00:00']
+            ['id'=>37,'idMk'=>3,'type'=>1,'hari'=>2,'idRoom'=>'SB-917','timeStart'=>'15:00:00','timeEnd'=>'17:00:00']
+        );
+        DB::table('jadwals')->insert(
+            ['id'=>38,'idMk'=>3,'type'=>1,'hari'=>2,'idRoom'=>'SB-918','timeStart'=>'15:00:00','timeEnd'=>'17:00:00']
+
         );
 
         //rabu
             //-- ID DIMULAI DARI 70 :))
+            DB::table('jadwals')->insert(
+                ['id'=>70,'idMk'=>25,'type'=>1,'hari'=>3,'idRoom'=>'SB-915','timeStart'=>'11:00:00','timeEnd'=>'13:00:00']
+            );
+            DB::table('jadwals')->insert(
+                ['id'=>71,'idMk'=>25,'type'=>1,'hari'=>3,'idRoom'=>'SB-916','timeStart'=>'11:00:00','timeEnd'=>'13:00:00']
+            );
+            DB::table('jadwals')->insert(
+                ['id'=>72,'idMk'=>38,'type'=>0,'hari'=>3,'idRoom'=>'10316','timeStart'=>'07:00:00','timeEnd'=>'09:00:00']
+            );
+            DB::table('jadwals')->insert(
+                ['id'=>73,'idMk'=>15,'type'=>0,'hari'=>3,'idRoom'=>'9122','timeStart'=>'07:00:00','timeEnd'=>'09:00:00']
+            );
+            DB::table('jadwals')->insert(
+                ['id'=>74,'idMk'=>24,'type'=>0,'hari'=>3,'idRoom'=>'10317','timeStart'=>'07:00:00','timeEnd'=>'09:00:00']
+            );
+            DB::table('jadwals')->insert(
+                ['id'=>75,'idMk'=>7,'type'=>1,'hari'=>3,'idRoom'=>'SB-915','timeStart'=>'07:00:00','timeEnd'=>'09:00:00']
+            );
+            DB::table('jadwals')->insert(
+                ['id'=>76,'idMk'=>14,'type'=>1,'hari'=>3,'idRoom'=>'SB-916','timeStart'=>'07:00:00','timeEnd'=>'09:00:00']
+            );
+            DB::table('jadwals')->insert(
+                ['id'=>77,'idMk'=>14,'type'=>1,'hari'=>3,'idRoom'=>'SB-917','timeStart'=>'07:00:00','timeEnd'=>'09:00:00']
+            );
+            DB::table('jadwals')->insert(
+                ['id'=>78,'idMk'=>14,'type'=>1,'hari'=>3,'idRoom'=>'SB-918','timeStart'=>'07:00:00','timeEnd'=>'09:00:00']
+            );
+            DB::table('jadwals')->insert(
+                ['id'=>79,'idMk'=>2,'type'=>1,'hari'=>3,'idRoom'=>'SB-915','timeStart'=>'09:00:00','timeEnd'=>'11:00:00']
+            );
+            DB::table('jadwals')->insert(
+                ['id'=>80,'idMk'=>2,'type'=>1,'hari'=>3,'idRoom'=>'SB-917','timeStart'=>'09:00:00','timeEnd'=>'11:00:00']
+            );
+            DB::table('jadwals')->insert(
+                ['id'=>81,'idMk'=>23,'type'=>0,'hari'=>3,'idRoom'=>'10316','timeStart'=>'10:00:00','timeEnd'=>'13:00:00']
+            );
+            DB::table('jadwals')->insert(
+                ['id'=>82,'idMk'=>23,'type'=>0,'hari'=>3,'idRoom'=>'10317','timeStart'=>'10:00:00','timeEnd'=>'13:00:00']
+            );
+            DB::table('jadwals')->insert(
+                ['id'=>83,'idMk'=>22,'type'=>0,'hari'=>3,'idRoom'=>'9121','timeStart'=>'13:00:00','timeEnd'=>'16:00:00']
+            );
+            DB::table('jadwals')->insert(
+                ['id'=>84,'idMk'=>27,'type'=>0,'hari'=>3,'idRoom'=>'9122','timeStart'=>'13:00:00','timeEnd'=>'16:00:00']
+            );
+            DB::table('jadwals')->insert(
+                ['id'=>85,'idMk'=>26,'type'=>1,'hari'=>3,'idRoom'=>'SB-918','timeStart'=>'13:00:00','timeEnd'=>'16:00:00']
+            );
+            DB::table('jadwals')->insert(
+                ['id'=>86,'idMk'=>37,'type'=>1,'hari'=>3,'idRoom'=>'SB-917','timeStart'=>'15:00:00','timeEnd'=>'17:00:00']
+            );
 
 
         //kamis
