@@ -349,7 +349,7 @@ class Seeder extends Migration
         //rabu
             //-- ID DIMULAI DARI 70 :))
             DB::table('jadwals')->insert(
-                ['id'=>70,'idMk'=>25,'type'=>1,'hari'=>3,'idRoom'=>'SB-915','timeStart'=>'11:00:00','timeEnd'=>'13:00:00']
+                ['id'=>88,'idMk'=>25,'type'=>1,'hari'=>3,'idRoom'=>'SB-915','timeStart'=>'11:00:00','timeEnd'=>'13:00:00']
             );
             DB::table('jadwals')->insert(
                 ['id'=>71,'idMk'=>25,'type'=>1,'hari'=>3,'idRoom'=>'SB-916','timeStart'=>'11:00:00','timeEnd'=>'13:00:00']
@@ -403,7 +403,7 @@ class Seeder extends Migration
 
         //kamis
         DB::table('jadwals')->insert(
-            ['id'=>38,'idMk'=>8,'type'=>0,'hari'=>4,'idRoom'=>'9121','timeStart'=>'13:00:00','timeEnd'=>'15:00:00']
+            ['id'=>87,'idMk'=>8,'type'=>0,'hari'=>4,'idRoom'=>'9121','timeStart'=>'13:00:00','timeEnd'=>'15:00:00']
         );
         DB::table('jadwals')->insert(
             ['id'=>39,'idMk'=>8,'type'=>0,'hari'=>4,'idRoom'=>'9121','timeStart'=>'15:00:00','timeEnd'=>'17:00:00']
