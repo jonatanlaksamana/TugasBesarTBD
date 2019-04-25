@@ -16,8 +16,11 @@ class AllTable extends Migration
         //
         DB::statement('create table Users (
             id int primary key ,
-            nama varchar(50)
+            nama varchar(50),
+            username varchar(20),
+            password varchar(20)
         )');
+        
         DB::statement('create table Ruangan (
             idRoom varchar(50) primary key ,
             jumlahMhs int

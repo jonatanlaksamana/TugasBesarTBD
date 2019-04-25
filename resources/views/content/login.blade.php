@@ -1,22 +1,25 @@
 @extends('layout.loginlayout')
 @section('content')
-<div class="limiter">
-		<div class="container-login100">
-			<div class="wrap-login100">
-				<div class="login100-pic js-tilt" data-tilt>
-					<img src="images/LogoIF.jpg" alt="IMG">
-				</div>
 
-				<form class="login100-form validate-form">
-					<span class="login100-form-title">
-						Login
+<body background="images/mc1.jpg" >
+	
+	<div class="limiter">
+		<div class="container-login100" style="padding-top:-35px;">
+			<div class="wrap-login100" >
+				<!-- <div class="login100-pic js-tilt" data-tilt> -->
+					<img src="images/Logo_UNPAR.png" alt="IMG" style="width:120px;height:120px;margin-left:83px;margin-top:60px;">
+				<!-- </div> -->
+
+				<form class="login100-form validate-form" style="margin-top:-30px;">
+					<span class="login100-form-title" style="padding-bottom:-40px;color: wheat">
+						Portal Dosen UNPAR
 					</span>
 
-					<div class="wrap-input100 validate-input" data-validate = "Valid email is required: ex@abc.xyz">
+					<div class="wrap-input100 validate-input" data-validate = "Valid email is required: ex@abc.xyz" style="margin-top:-30px;">
 						<input class="input100" type="text" name="email" placeholder="Email">
 						<span class="focus-input100"></span>
 						<span class="symbol-input100">
-							<i class="fa fa-envelope" aria-hidden="true"></i>
+							<i class="fa fa-envelope" aria-hidden="false"></i>
 						</span>
 					</div>
 
@@ -36,16 +39,21 @@
 
 					
 
-					<div class="text-center p-t-136">
+					<!----<div class="text-center p-t-136">
 						<a class="txt2" href="#">
 							Create your Account
 							<i class="fa fa-long-arrow-right m-l-5" aria-hidden="true"></i>
 						</a>
-					</div>
+					</div>-->
 				</form>
 			</div>
 		</div>
 	</div>
 	
 	
+
+
+</body>
+</html>
+
 @endsection
