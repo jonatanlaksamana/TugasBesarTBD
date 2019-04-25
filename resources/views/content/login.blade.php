@@ -12,7 +12,7 @@
 
 				<form class="login100-form validate-form" style="margin-top:-30px;">
 					<span class="login100-form-title" style="padding-bottom:-40px;color: wheat">
-						Portal Dosen UNPAR
+						Portal Dosen UNPAR dari jojo
 					</span>
 
 					<div class="wrap-input100 validate-input" data-validate = "Valid email is required: ex@abc.xyz" style="margin-top:-30px;">
