@@ -16,18 +16,14 @@
 </head>
 <body>
 
-    <!-- navbar -->
+    
+    @yield('content')
+
+
+
+
 
     
-
-    <!-- <div class="container-fluid"> -->
-        
-    @yield('content')
-    <!-- </div> -->
-
-
-
-
     <script src="{{asset('js/util.js')}}"></script>
     <script src="{{asset('js/main.js')}}"></script>
 </body>

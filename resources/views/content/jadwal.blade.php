@@ -1,6 +1,8 @@
 @extends('layout.layouts')
 @section('content')
 
+
+
   <header class="cd-main-header text--center flex flex--column flex--center">
   
 
