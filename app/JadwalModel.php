@@ -10,37 +10,186 @@ class JadwalModel extends Model
     //
     protected $table = 'jadwals';
 
-    public static function getAll( ){
-        // return   DB::select('
-
-        // select 
-        //     jadwals.*,
-        //     matakuliah.name 
-        // from 
-        //     jadwals inner join matakuliah on matakuliah.id = jadwals.idMk  
-        // where 
-        //     hari = 1 and idRoom like 10316');
+    public static function getAll9120($id){
 
         return DB::select(
             'select 
                 jadwals.*,
-                matakuliah.name  
+                matakuliah.singkatan 
             from 
                 jadwals inner join matakuliah on matakuliah.id = jadwals.idMk  
             where 
-                hari = 1 and idRoom like ?', [10316]);
-    
-           // return view('user.index', ['users' => $users]);
+                hari = ? and idRoom like ?', [$id,9120]
+        );
+
     }
 
-     
+    public static function getAll9121($id ){
 
-    // public static function parent()
-    // {
-    //     return $this->belongsTo('jadwals','idRoom');
-    // }
-    // public static function child()
-    // {
-    //     return $this->hasMany('jadwals','idRoom','idMK',);
-    // }
+        return DB::select(
+            'select 
+                jadwals.*,
+                matakuliah.singkatan  
+            from 
+                jadwals inner join matakuliah on matakuliah.id = jadwals.idMk  
+            where 
+                hari = ? and idRoom like ?', [$id,9121]
+        );
+
+    }
+
+    public static function getAll9122( $id){
+
+        return DB::select(
+            'select 
+                jadwals.*,
+                matakuliah.singkatan  
+            from 
+                jadwals inner join matakuliah on matakuliah.id = jadwals.idMk  
+            where 
+                hari = ? and idRoom like ?', [$id,9122]
+        );
+
+    }
+
+    public static function getAll10316($id ){
+
+        return DB::select(
+            'select 
+                jadwals.*,
+                matakuliah.singkatan  
+            from 
+                jadwals inner join matakuliah on matakuliah.id = jadwals.idMk  
+            where 
+                hari = ? and idRoom like ?', [$id,10316]
+        );
+
+    }
+
+    public static function getAll10317($id ){
+
+        return DB::select(
+            'select 
+                jadwals.*,
+                matakuliah.singkatan  
+            from 
+                jadwals inner join matakuliah on matakuliah.id = jadwals.idMk  
+            where 
+                hari = ? and idRoom like ?', [$id,10317]
+        );
+
+    }
+
+    public static function getAll10322( $id){
+
+        return DB::select(
+            'select 
+                jadwals.*,
+                matakuliah.singkatan  
+            from 
+                jadwals inner join matakuliah on matakuliah.id = jadwals.idMk  
+            where 
+                hari = ? and idRoom like ?', [$id,10322]
+        );
+
+    }
+
+    public static function getAll10307( $id){
+
+        return DB::select(
+            'select 
+                jadwals.*,
+                matakuliah.singkatan  
+            from 
+                jadwals inner join matakuliah on matakuliah.id = jadwals.idMk  
+            where 
+                hari = ? and idRoom like ?', [$id,10307]
+        );
+
+    }
+
+    public static function getAllSB914( $id){
+
+        return DB::select(
+            "select 
+                jadwals.*,
+                matakuliah.singkatan  
+            from 
+                jadwals inner join matakuliah on matakuliah.id = jadwals.idMk  
+            where 
+                hari = ? and idRoom like ?", [$id,'SB-914']
+        );
+
+    }
+
+    public static function getAllSB913($id ){
+
+        return DB::select(
+            'select 
+                jadwals.*,
+                matakuliah.singkatan  
+            from 
+                jadwals inner join matakuliah on matakuliah.id = jadwals.idMk  
+            where 
+                hari = ? and idRoom like ?', [$id,'SB-913']
+        );
+
+    }
+
+    public static function getAllSB915($id ){
+
+        return DB::select(
+            'select 
+                jadwals.*,
+                matakuliah.singkatan  
+            from 
+                jadwals inner join matakuliah on matakuliah.id = jadwals.idMk  
+            where 
+                hari = ? and idRoom like ?', [$id,'SB-915']
+        );
+
+    }
+
+    public static function getAllSB916($id ){
+
+        return DB::select(
+            'select 
+                jadwals.*,
+                matakuliah.singkatan  
+            from 
+                jadwals inner join matakuliah on matakuliah.id = jadwals.idMk  
+            where 
+                hari = ? and idRoom like ?', [$id,'SB-916']
+        );
+
+    }
+
+    public static function getAllSB917($id ){
+
+        return DB::select(
+            'select 
+                jadwals.*,
+                matakuliah.singkatan  
+            from 
+                jadwals inner join matakuliah on matakuliah.id = jadwals.idMk  
+            where 
+                hari = ? and idRoom like ?', [$id,'SB-917']
+        );
+
+    }
+
+    public static function getAllSB918($id ){
+
+        return DB::select(
+            'select 
+                jadwals.*,
+                matakuliah.singkatan  
+            from 
+                jadwals inner join matakuliah on matakuliah.id = jadwals.idMk  
+            where 
+                hari = ? and idRoom like ?', [$id,'SB-918']
+        );
+
+    }
+
 }

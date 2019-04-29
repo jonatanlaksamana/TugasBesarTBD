@@ -22,12 +22,16 @@
 <div class="flip-card" >
   <div class="flip-card-inner">
     <div class="flip-card-front">
-    <img src="{{asset('/images/crumpledpaper.jpg')}}" style="width:200px;height:200px; position:relative;"  >
-            <p>Seluruh Jadwal</p>
+    
+      <img src="{{asset('/images/crumpledpaper.jpg')}}" style="width:200px;height:200px; position:relative;"  >
+    
+      <p>Seluruh Jadwal</p>
+      
     </div>
     <div class="flip-card-back">
-      
+        <a href="{{url('jadwals/1')}}">
       <p>Menapilkan seluruh jadwal mengajar.</p>
+    </a>
     </div>
   </div>
 </div>

@@ -7,12 +7,12 @@
 		<div class="container-login100" style="padding-top:-35px;background-size: cover;">
 			<div class="wrap-login100" >
 				<!-- <div class="login100-pic js-tilt" data-tilt> -->
-					<img src="images/Logo_UNPAR.png" alt="IMG" style="width:120px;height:120px;margin-left:40%;margin-top:-22%;">
+					<img src="images/Logo_UNPAR.png" alt="IMG" style="width:120px;height:120px;margin-left:27%;margin-top:13%;">
 				<!-- </div> -->
 
 				<form method="post" action="{{route('signIn')}}" class="login100-form validate-form" style="margin-top:-30px;">
 					@csrf
-					<span class="login100-form-title" style="padding-bottom:-40px;color: wheat">
+					<span class="login100-form-title" style="padding-bottom:-40px;color: whitesmoke;font-family: 'Permanent Marker', cursive;font-size:27px;">
 						Portal Dosen UNPAR
 					</span>
 
