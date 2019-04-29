@@ -5,9 +5,12 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\JadwalModel;
 use Illuminate\Support\Facades\DB;
+
+use App\LoginModel;
+
 class LoginController extends Controller
 {
-    //
+    
     public function index(){
         return view('content.login');
     }
@@ -20,4 +23,5 @@ class LoginController extends Controller
         $results = DB::select($query);
         return $results;
     }
+
 }

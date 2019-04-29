@@ -11,6 +11,7 @@
 |
 */
 
+
     // Route::get('/', 'indexcontroller@index');
 Route::get('/senin' , 'JadwalController@index')->name('jadwal.senin');
 Route::get('/login' , 'LoginController@index')->name('login.log');
