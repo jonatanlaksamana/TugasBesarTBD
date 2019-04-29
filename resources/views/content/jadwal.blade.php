@@ -1,44 +1,37 @@
 @extends('layout.layouts')
 @section('content')
-
-  <header class="cd-main-header text--center flex flex--column flex--center">
+<body background="{{asset('/images/multicol.jpg')}}" >
   
-
-    <h1 class="text--xl">Schedule Template</h1>
-  </header>
   <nav>
-  <ul>
-    <a href="#" class="skew-wrapper orange-outline">
-      <li class="unskew">SENIN</li>
-    </a>
-    <a href="#" class="skew-wrapper orange-outline">
-      <li class="unskew">SELASA</li>
-    </a>
-    <a href="#" class="skew-wrapper orange-outline">
-      <li class="unskew">RABU</li>
-    </a>
-    <a href="#" class="skew-wrapper orange-outline">
-      <li class="unskew">KAMIS</li>
-    </a>
-    <a href="#" class="skew-wrapper orange-outline">
-      <li class="unskew">JUMAT</li>
-    </a>
-
-  </ul>
+    <ul style="margin-top:10px;margin-bottom:-35px;">
+        <a href="#" class="skew-wrapper orange-outline" style="margin-left:290px;">
+          <li class="unskew">SENIN</li>
+        </a>
+        <a href="#" class="skew-wrapper orange-outline" style="margin-left:10px;">
+          <li class="unskew">SELASA</li>
+        </a>
+        <a href="#" class="skew-wrapper orange-outline" style="margin-left:10px;">
+          <li class="unskew">RABU</li>
+        </a>
+        <a href="#" class="skew-wrapper orange-outline" style="margin-left:10px;">
+          <li class="unskew">KAMIS</li>
+        </a>
+        <a href="#" class="skew-wrapper orange-outline" style="margin-left:10px;">
+          <li class="unskew">JUMAT</li>
+        </a>
+    </ul>
 </nav>
 
   <div class="cd-schedule cd-schedule--loading margin-top--lg margin-bottom--lg js-cd-schedule">
-    <div class="cd-schedule__timeline">
+    <div class="cd-schedule__timeline" >
       <ul>
 	      <li><span>07:00</span></li>
 	    	<li><span>07:30</span></li>
         <li><span>08:00</span></li>
-        
 		    <li><span>08:30</span></li>
         <li><span>09:00</span></li>
         <li><span>09:30</span></li>
         <li><span>10:00</span></li>
-		    
         <li><span>10:30</span></li>
         <li><span>11:00</span></li>
         <li><span>11:30</span></li>
@@ -52,34 +45,32 @@
         <li><span>15:30</span></li>
         <li><span>16:00</span></li>
         <li><span>16:30</span></li>
-        <li><span>17:00</span></li>
-        {{-- <li><span>17:30</span></li>
-        <li><span>18:00</span></li> --}}
+        <li style="margin-top:-10px;"><span >17:00</span></li>
       </ul>
     </div> <!-- .cd-schedule__timeline -->
 	
-    <div class="cd-schedule__events">
-      <ul>
+    <div class="cd-schedule__events" >
+      <ul style="height:1050px">
         <li class="cd-schedule__group">
           <div class="cd-schedule__top-info"><span>10316</span></div>
 		
           <ul>
-			 @foreach($allJadwal as $jadwal)
-            <li class="cd-schedule__event">
-              <a data-start="{{$jadwal->timeStart}}" data-end="{{$jadwal->timeEnd}}" data-content="event-abs-circuit" data-event="event-1" href="#0">
-                <em class="cd-schedule__name">{{$jadwal->name}}</em>
-              </a>
-			</li>
-			
-			@endforeach
-           </ul>
+            @foreach($allJadwal as $jadwal)
+              <li class="cd-schedule__event">
+                <a data-start="{{$jadwal->timeStart}}" data-end="{{$jadwal->timeEnd}}" data-content="event-abs-circuit" data-event="event-1" href="#0">
+                  <em class="cd-schedule__name">{{$jadwal->name}}</em>
+                </a>
+              </li>
+            @endforeach
+          </ul>
         </li>
-  
-        <li class="cd-schedule__group">
+        
+
+        <li class="cd-schedule__group">  
           <div class="cd-schedule__top-info"><span>Tuesday</span></div>
   
           <ul>
-            <li class="cd-schedule__event">
+            <li class="cd-schedule__event"  >
               <a data-start="10:00" data-end="11:00"  data-content="event-rowing-workout" data-event="event-2" href="#0">
                 <em class="cd-schedule__name">Rowing Workout</em>
               </a>
@@ -97,11 +88,7 @@
               </a>
             </li>
   
-            <li class="cd-schedule__event">
-              <a data-start="15:45" data-end="16:45"  data-content="event-yoga-1" data-event="event-3" href="#0">
-                <em class="cd-schedule__name">Yoga Level 1</em>
-              </a>
-            </li>
+
           </ul>
         </li>
   
@@ -112,12 +99,6 @@
             <li class="cd-schedule__event">
               <a data-start="09:00" data-end="10:15" data-content="event-restorative-yoga" data-event="event-4" href="#0">
                 <em class="cd-schedule__name">Restorative Yoga</em>
-              </a>
-            </li>
-  
-            <li class="cd-schedule__event">
-              <a data-start="10:45" data-end="11:45" data-content="event-yoga-1" data-event="event-3" href="#0">
-                <em class="cd-schedule__name">Yoga Level 1</em>
               </a>
             </li>
   
@@ -152,14 +133,8 @@
             </li>
   
             <li class="cd-schedule__event">
-              <a data-start="15:30" data-end="16:30" data-content="event-abs-circuit" data-event="event-1" href="#0">
+              <a data-start="15:30" data-end="17:00" data-content="event-abs-circuit" data-event="event-1" href="#0">
                 <em class="cd-schedule__name">Abs Circuit</em>
-              </a>
-            </li>
-  
-            <li class="cd-schedule__event">
-              <a data-start="17:00" data-end="18:30"  data-content="event-rowing-workout" data-event="event-2" href="#0">
-                <em class="cd-schedule__name">Rowing Workout</em>
               </a>
             </li>
           </ul>
@@ -180,14 +155,9 @@
                 <em class="cd-schedule__name">Abs Circuit</em>
               </a>
             </li>
-  
-            <li class="cd-schedule__event">
-              <a data-start="15:45" data-end="16:45"  data-content="event-yoga-1" data-event="event-3" href="#0">
-                <em class="cd-schedule__name">Yoga Level 1</em>
-              </a>
-            </li>
           </ul>
         </li>
+
       </ul>
     </div>
   
@@ -211,4 +181,6 @@
   
     <div class="cd-schedule__cover-layer"></div>
   </div> <!-- .cd-schedule -->
+
+</body>
 @endsection

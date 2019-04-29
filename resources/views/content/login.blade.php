@@ -1,21 +1,23 @@
 @extends('layout.loginlayout')
 @section('content')
 
-<body background="images/mc1.jpg" >
+<body background="{{asset('/images/multicol.jpg')}}" style="background-position:center">
 	
 	<div class="limiter">
-		<div class="container-login100" style="padding-top:-35px;">
+		<div class="container-login100" style="padding-top:-35px;background-size: cover;">
 			<div class="wrap-login100" >
 				<!-- <div class="login100-pic js-tilt" data-tilt> -->
-					<img src="images/Logo_UNPAR.png" alt="IMG" style="width:120px;height:120px;margin-left:83px;margin-top:60px;">
+					<img src="images/Logo_UNPAR.png" alt="IMG" style="width:120px;height:120px;margin-left:40%;margin-top:-22%;">
 				<!-- </div> -->
 
-				<form class="login100-form validate-form" style="margin-top:-30px;">
+				<form method="post" action="{{route('signIn')}}" class="login100-form validate-form" style="margin-top:-30px;">
+					@csrf
 					<span class="login100-form-title" style="padding-bottom:-40px;color: wheat">
-						Portal Dosen UNPAR dari jojo
+						Portal Dosen UNPAR
 					</span>
 
-					<div class="wrap-input100 validate-input" data-validate = "Valid email is required: ex@abc.xyz" style="margin-top:-30px;">
+					<div class="wrap-input100 " data-validate = "Valid email is required: ex@abc.xyz" style="margin-top:-30px;">
+
 						<input class="input100" type="text" name="email" placeholder="Email">
 						<span class="focus-input100"></span>
 						<span class="symbol-input100">
