@@ -16,103 +16,55 @@ class Seeder extends Migration
     {
         //
         DB::table('users')->insert(
-            ['id' => 1, 'nama' => 'Vania']
+            ['id' => 1, 'nama' => 'Vania','username' => 'vania1', 'password' => '123']
         );
         DB::table('users')->insert(
-            ['id' => 2, 'nama' => 'Pascal']
+            ['id' => 2, 'nama' => 'Pascal','username' => 'pascal2', 'password' => '234']
         );
         DB::table('users')->insert(
-            ['id' => 3, 'nama' => 'Husnul']
+            ['id' => 3, 'nama' => 'Husnul','username' => 'husnul3', 'password' => '345']
         );
         DB::table('users')->insert(
-            ['id' => 4, 'nama' => 'Chandra']
+            ['id' => 4, 'nama' => 'Chandra','username' => 'chandra4', 'password' => '456']
         );
         DB::table('users')->insert(
-            ['id' => 5, 'nama' => 'Kris']
+            ['id' => 5, 'nama' => 'Kris','username' => 'kris5', 'password' => '567']
         );
         DB::table('users')->insert(
-            ['id' => 6, 'nama' => 'Mariska']
+            ['id' => 6, 'nama' => 'Mariska','username' => 'mariska6', 'password' => '678']
         );
         DB::table('users')->insert(
-            ['id' => 7, 'nama' => 'Rosa']
+            ['id' => 7, 'nama' => 'Rosa','username' => 'rosa7', 'password' => '789']
         );
         DB::table('users')->insert(
-            ['id' => 8, 'nama' => 'Vero']
+            ['id' => 8, 'nama' => 'Vero','username' => 'vero8', 'password' => '898']
         );
         DB::table('users')->insert(
-            ['id' => 9, 'nama' => 'Eli']
+            ['id' => 9, 'nama' => 'Eli','username' => 'eli9', 'password' => '987']
         );
         DB::table('users')->insert(
-            ['id' => 10, 'nama' => 'Natalia']
+            ['id' => 10, 'nama' => 'Natalia','username' => 'natalia10', 'password' => '876']
         );
         DB::table('users')->insert(
-            ['id' => 11, 'nama' => 'Keenan']
+            ['id' => 11, 'nama' => 'Keenan','username' => 'keenan11', 'password' => '765']
         );
         DB::table('users')->insert(
-            ['id' => 12, 'nama' => 'Nurmala']
+            ['id' => 12, 'nama' => 'Nurmala','username' => 'nurmala12', 'password' => '654']
         );
         DB::table('users')->insert(
-            ['id' => 13, 'nama' => 'Lucy']
+            ['id' => 13, 'nama' => 'Lucy','username' => 'lucy13', 'password' => '543']
         );
         DB::table('users')->insert(
-            ['id' => 14, 'nama' => 'Reymon']
+            ['id' => 14, 'nama' => 'Reymon','username' => 'reymon14', 'password' => '321']
         );
         DB::table('users')->insert(
-            ['id' => 15, 'nama' => 'Heni']
+            ['id' => 15, 'nama' => 'Heni','username' => 'heni15', 'password' => '212']
         );
         DB::table('users')->insert(
-            ['id' => 16, 'nama' => 'Janto']
+            ['id' => 16, 'nama' => 'Janto','username' => 'janto16', 'password' => '012']
         );
 
-        //username password
-        DB::table('users')->update(
-            ['username' => 'vania1', 'password' => '123']
-        );
-        DB::table('users')->update(
-            ['username' => 'pascal2', 'password' => '234']
-        );
-        DB::table('users')->update(
-            ['username' => 'husnul3', 'password' => '345']
-        );
-        DB::table('users')->update(
-            ['username' => 'chandra4', 'password' => '456']
-        );
-        DB::table('users')->update(
-            ['username' => 'kris5', 'password' => '567']
-        );
-        DB::table('users')->update(
-            ['username' => 'mariska6', 'password' => '678']
-        );
-        DB::table('users')->update(
-            ['username' => 'rosa7', 'password' => '789']
-        );
-        DB::table('users')->update(
-            ['username' => 'vero8', 'password' => '898']
-        );
-        DB::table('users')->update(
-            ['username' => 'eli9', 'password' => '987']
-        );
-        DB::table('users')->update(
-            ['username' => 'natalia10', 'password' => '876']
-        );
-        DB::table('users')->update(
-            ['username' => 'keenan11', 'password' => '765']
-        );
-        DB::table('users')->update(
-            ['username' => 'nurmala12', 'password' => '654']
-        );
-        DB::table('users')->update(
-            ['username' => 'lucy13', 'password' => '543']
-        );
-        DB::table('users')->update(
-            ['username' => 'reymon14', 'password' => '321']
-        );
-        DB::table('users')->update(
-            ['username' => 'heni15', 'password' => '212']
-        );
-        DB::table('users')->update(
-            ['username' => 'janto16', 'password' => '012']
-        );
+        
 
 
         DB::table('matakuliah')->insert(
