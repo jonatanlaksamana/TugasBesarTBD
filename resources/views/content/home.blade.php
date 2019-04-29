@@ -2,9 +2,8 @@
 @section('content')
 <html>
 
-<body>
 
-
+<body background="{{asset('/images/multicol.jpg')}}" >
 
 <div class="flip-card">
   <div class="flip-card-inner">

@@ -1,5 +1,5 @@
 @extends('layout.headerLayout')
-@section('contentHeader')
+@section('content')
 <body>
     <ul>
         <img src="logo_unpar.png" style="widht:53px;height:53px;padding:9px;padding-left:15px;padding-bottom:11px;float: left;">
