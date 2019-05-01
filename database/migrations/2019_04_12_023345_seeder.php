@@ -14,7 +14,7 @@ class Seeder extends Migration
      */
     public function up()
     {
-        //
+        //dosen
         DB::table('users')->insert(
             ['id' => 1, 'nama' => 'Vania']
         );
