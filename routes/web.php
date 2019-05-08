@@ -13,7 +13,13 @@
 
 
     // Route::get('/', 'indexcontroller@index');
-Route::get('/senin' , 'JadwalController@index')->name('jadwal.senin');
+Route::get('/jadwals/{id}' , 'JadwalController@index')->name('jadwal.senin');
+Route::get('/jadwals/{id}' , 'JadwalController@index')->name('jadwal.selasa');
+Route::get('/rabu' , 'JadwalController@index3')->name('jadwal.rabu');
+Route::get('/kamis' , 'JadwalController@index4')->name('jadwal.kamis');
+Route::get('/jumat' , 'JadwalController@index5')->name('jadwal.jumat');
+\
 Route::get('/login' , 'LoginController@index')->name('login.log');
 Route::get('/home' , 'HomeController@index')->name('home.menu');
 Route::post('/login','LoginController@login')->name('signIn');
+Route::get('/pilihjadwal','PilihJadwalController@index')->name('pilihJadwal.choose');

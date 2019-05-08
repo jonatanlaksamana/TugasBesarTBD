@@ -5,12 +5,13 @@ body {
 
 .flip-card {
   background-color: transparent;
-  width: 200px;
-  height: 200px;
+  width: 250px;
+  height: 380px;
   perspective: 1000px;
  float:right;
- padding-right: 200px;
+ padding-right: 140px;
  position: relative;
+ margin-top:80px;
 }
 
 .flip-card-inner {
