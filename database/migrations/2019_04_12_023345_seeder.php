@@ -69,17 +69,21 @@ class Seeder extends Migration
 
 
         DB::table('matakuliah')->insert(
-            [ 'id' => 1, 'name' =>'Semester6','semester'=>null]
+            [  'name' =>'Semester6','semester'=>null]
+        );
+        
+        DB::table('matakuliah')->insert(
+            [  'name' =>'Semester2','semester'=>null]
         );
 
         DB::table('matakuliah')->insert(
-            [ 'id'=> 2 , 'name' =>'Topik Khusus Sistem Informasi 1','semester'=>1]
+            [  'name' =>'Topik Khusus Sistem Informasi 1','semester'=>1]
         );
         DB::table('matakuliah')->insert(
-            [ 'id' => 3, 'name' =>'Design dan Analisis Algoritma','semester'=>1]
+            [  'name' =>'Design dan Analisis Algoritma','semester'=>2]
         );
         DB::table('matakuliah')->insert(
-            [ 'id'=>4, 'name' =>'Pemrograman Berbasis Web','semester'=>1]
+            [  'name' =>'Pemrograman Berbasis Web','semester'=>1]
         );
         // DB::table('matakuliah')->insert(
         //     ['id' => 4, 'name' =>'Sertifikasi Administrasi Jaringan Komputer 2','semester'=>6]

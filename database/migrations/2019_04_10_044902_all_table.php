@@ -22,13 +22,10 @@ class AllTable extends Migration
         )');
         
         DB::statement('create table Ruangan (
-<<<<<<< HEAD
+
             idRoom varchar(50) primary key ,
             kapasitas int
-=======
-            idRoom varchar(50) primary key,
-            jumlahMhs int
->>>>>>> df8d6f05c590bddac9b80514b2a513b5d329b78e
+
         )');
         DB::statement('create table MataKuliah (
             id int primary key  AUTO_INCREMENT,
