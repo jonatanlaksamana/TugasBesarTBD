@@ -1,17 +1,22 @@
 @extends('layout.pilihjadwallayout')
 @section('content')
-{{var_dump($matkul)}}
+
 
 
 <div class="accordion mt-5" id="accordionExample">
+@foreach($matkul as $parent)
   <div class="card">
     <div class="card-header" id="headingOne">
       <h5 class="mb-0">
+
         <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-          Smester 6
+          {{$parent->name}}
         </button>
       </h5>
     </div>
+
+
+
 
     <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
       <div class="card-body">
@@ -22,15 +27,16 @@
                         <thead>
                         <tr>
                     
-                            <th scope="col">MataKuliah</th>
+                            <th scope="col">Matakuliah</th>
                             <th scope="col">selected</th>
                           
                         </tr>
                         </thead>
                         <tbody>
+                        @foreach($parent->children as $child)
                         <tr>
                            
-                            <td>Bootstrap 4 CDN and Starter Template</td>
+                            <td>{{$child->name}}</td>
                             <td>
                             <div class="custom-control custom-checkbox">
                                 <input type="checkbox" class="custom-control-input" id="customCheck1" checked>
@@ -38,13 +44,17 @@
                             </div>
                             </td> 
                         </tr>
+                        @endforeach
                         </tbody>
                     </table>
                     </div>
                 </div>
                 </div>
       </div>
+     
     </div>
+     
+    @endforeach
   </div>          
 @endsection
 
