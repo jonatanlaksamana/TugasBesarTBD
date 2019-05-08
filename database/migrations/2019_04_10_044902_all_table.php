@@ -23,7 +23,7 @@ class AllTable extends Migration
         
         DB::statement('create table Ruangan (
             idRoom varchar(50) primary key ,
-            jumlahMhs int
+            kapasitas int
         )');
         DB::statement('create table MataKuliah (
             id int primary key ,
