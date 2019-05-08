@@ -19,9 +19,16 @@ class LoginController extends Controller
         $name = request('email');
         $pass = request('pass');
         
-        $query ="SELECT * FROM users WHERE username LIKE $name AND password LIKE $pass ";
+        $query ="SELECT * FROM users WHERE username LIKE '$name' AND password LIKE '$pass' ";
         $results = DB::select($query);
-        return $results;
+        if($results != null){
+
+            return redirect()->route('home.menu');
+        }
+        else{
+            return "ga ada";
+
+        }
     }
 
 }

@@ -4,11 +4,11 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 <!--===============================================================================================-->	
-	<!--<link rel="icon" type="image/png" href="images/icons/favicon.ico"/>-->
+	<link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
 <!--===============================================================================================-->
 	<link rel="stylesheet" type="text/css" href="{{asset('/css/bootstrap.min.css')}}">
 <!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="{{asset('/css/font-awesome.min.css')}}">
+	<link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
 <!--===============================================================================================-->
 	<link rel="stylesheet" type="text/css" href="{{asset('/css/animate.css')}}">
 <!--===============================================================================================-->	
@@ -17,6 +17,7 @@
 	<link rel="stylesheet" type="text/css" href="{{asset('/css/select2.min.css')}}">
 <!--===============================================================================================-->
 	<link rel="stylesheet" type="text/css" href="{{asset('/css/util.css')}}">
+<!--===============================================================================================-->
 	<link rel="stylesheet" type="text/css" href="{{asset('/css/main.css')}}">
 <!--===============================================================================================-->
 </head>
