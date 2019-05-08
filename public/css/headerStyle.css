@@ -4,7 +4,7 @@ ul {
     margin-top:-10px;
     padding: 0;
     overflow: hidden;
-    background-image: linear-gradient(to right, rgb(5, 112, 199,0.97) , rgb(218, 127, 52,0.95), rgba(255, 243, 82, 0.93)) ;
+    background-image: linear-gradient(to right, rgb(5, 112, 199,0.99) , rgb(218, 127, 52,0.99), rgba(255, 243, 82, 0.99)) ;
     width:101.4%;
     border-bottom-left-radius: 37px;
 
