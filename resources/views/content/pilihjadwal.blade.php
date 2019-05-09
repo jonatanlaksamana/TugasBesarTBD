@@ -33,15 +33,12 @@
                         </tr>
                         </thead>
                         <tbody>
-                        @foreach($parent->children as $child)
+                        @foreach($parent->children as $child) 
                         <tr>
                            
                             <td>{{$child->name}}</td>
                             <td>
-                            <div class="custom-control custom-checkbox">
-                                <input type="checkbox" class="custom-control-input" id="customCheck1" checked>
-                                <label class="custom-control-label" for="customCheck1">n sks</label>
-                            </div>
+                              <input type="checkbox" name="test" id="">
                             </td> 
                         </tr>
                         @endforeach
