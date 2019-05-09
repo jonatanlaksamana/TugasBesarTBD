@@ -31,7 +31,9 @@ class AllTable extends Migration
             id int primary key  AUTO_INCREMENT,
             name varchar(50),
             semester int,
+            sks int,
             singkatan varchar(50)
+
         )');
         DB::statement('create table Jadwals (
             id int primary key  AUTO_INCREMENT,
@@ -41,7 +43,9 @@ class AllTable extends Migration
             idRoom varchar(50),
             timeStart time,
             timeEnd time,
-            kelas varchar(1)
+            kelas varchar(1),
+            durasi int,
+            prioritas int
         )');
         DB::statement('create table Mengajar(
             idJadwal int,
