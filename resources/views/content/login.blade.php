@@ -1,7 +1,7 @@
 @extends('layout.loginlayout')
 @section('content')
 
-<body background="{{asset('/images/multicol.jpg')}}" style="background-position:center">
+<body background="{{asset('/images/wall3.png')}}" style="background-position:center">
 	
 	<div class="limiter">
 		<div class="container-login100" style="padding-top:-35px;background-size: cover;">
