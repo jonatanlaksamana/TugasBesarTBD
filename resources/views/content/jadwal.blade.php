@@ -1,6 +1,6 @@
 @extends('layout.layouts')
 @section('content')
-<body background="{{asset('/images/multicol.jpg')}}" >
+<body background="{{asset('/images/multicol.jpg')}}" style="background-position:center" >
   
   <nav>
     <ul style="margin-top:10px;margin-bottom:-35px;">

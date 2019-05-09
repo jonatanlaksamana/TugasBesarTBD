@@ -3,7 +3,7 @@
 <html>
 
 
-<body background="{{asset('/images/multicol.jpg')}}" style="width:98.67%">
+<body background="{{asset('/images/wall3.png')}}" style="width:98.67%;">
 
 <div class="flip-card" style="border-radius:20px">
   <div class="flip-card-inner" style="border-radius:20px">
@@ -13,8 +13,9 @@
       
     </div>
     <div class="flip-card-back" style="border-radius:20px">
-      
+      <a href="{{url('pilihjadwal')}}">
       <p>Memilih jadwal mengajar.</p>
+      </a>
     </div>
   </div>
 </div>
@@ -43,8 +44,9 @@
                 <p>Ganti Jadwal</p>
           </div>
           <div class="flip-card-back" style="border-radius:20px">
-           
+            
             <p>Mengganti jadwal untuk kelas pengganti.</p>
+            
           </div>
         </div>
       </div>
