@@ -12,7 +12,7 @@
     <div class="card-header" id="headingOne" style="background-image: url(../../../images/head4.jpg);">
       <h5 class="mb-0">
 
-        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne" style="color:white;font-weight:600;">
           {{$parent->name}}
         </button>
       </h5>
@@ -26,15 +26,15 @@
                     <table class="table table-bordered" style="border-radius:20px;" >
                         <thead>
                         <tr>
-                            <th scope="col" style="background-image: linear-gradient(to left, rgb(100, 107, 152,0.99), rgba(110, 143, 102, 0.79))">Matakuliah</th>
-                            <th scope="col" style="background-image: linear-gradient(to left, rgb(118, 127, 52,0.99), rgba(255, 243, 82, 0.99))">Pilih</th>
+                            <th scope="col" style="color:white;font-weight:400;background-image:  linear-gradient(to left, rgb(100, 107, 152,0.99), rgba(110, 143, 102, 0.79))">Matakuliah</th>
+                            <th scope="col" style="color:white;font-weight:400;background-image: linear-gradient(to right, rgb(100, 107, 152,0.99), rgba(110, 143, 102, 0.79))">Pilih</th>
                         </tr>
                         </thead>
-                        <tbody>
+                        <tbody style="color:black;font-weight:390;">
                         @foreach($parent->children as $child)
                         <tr>
                            
-                            <td>{{$child->name}}</td>
+                            <td >{{$child->name}}</td>
                             <td>
                             <div class="custom-control custom-checkbox">
                                 <input type="checkbox" class="custom-control-input" id="customCheck1" checked>
