@@ -1,14 +1,16 @@
 <html lang="en">
 <head>
     <!-- <link rel="stylesheet" href="{{asset('/css/pilihjadwal.css')}}"> -->
-    <link rel="stylesheet" type="text/css" href="{{asset('/css/home.css')}}"> 
+   
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     
+    
+    <link rel="stylesheet" href="{{asset('/css/headerStyle.css')}}"> 
+    <link rel="stylesheet" href="{{asset('/bootstrap/dist/css/bootstrap.css')}}">
 </head>
 <body>
 
-    
+    @include('content/header')
     @yield('content')
 
 
@@ -17,7 +19,7 @@
 
 
 <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
- <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+ <script src="{{asset('/bootstrap/dist/js/bootstrap.js')}}"></script>
         
 </body>
 </html>
