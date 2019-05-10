@@ -1,6 +1,6 @@
 @extends('layout.layouts')
 @section('content')
-<body background="{{asset('/images/multicol.jpg')}}" style="background-position:center" >
+<body background="{{asset('/images/wall4.png')}}" style="background-position:center" >
   
   <nav>
     <ul style="margin-top:10px;margin-bottom:-35px;">
@@ -23,8 +23,7 @@
 </nav>
 
   <div class="cd-schedule cd-schedule--loading margin-top--lg margin-bottom--lg js-cd-schedule">
-    <div class="cd-schedule__timeline" >
-      <ul>
+    <div class="cd-schedule__timeline" style="font-weight:bold;color:whitesmoke">
 	      <li><span>07:00</span></li>
 	    	<li><span>07:30</span></li>
         <li><span>08:00</span></li>
@@ -45,7 +44,7 @@
         <li><span>15:30</span></li>
         <li><span>16:00</span></li>
         <li><span>16:30</span></li>
-        <li style="margin-top:-10px;"><span >17:00</span></li>
+        <li style="margin-top:-15px;"><span >17:00</span></li>
       </ul>
     </div> <!-- .cd-schedule__timeline -->
 	

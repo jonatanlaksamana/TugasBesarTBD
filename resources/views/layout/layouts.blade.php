@@ -10,14 +10,13 @@
     <script>document.getElementsByTagName("html")[0].className += " js";</script>
     <link rel="stylesheet" href="{{asset('/css/style.css')}}">
     <link rel="stylesheet" href="{{asset('/css/button.css')}}">
-
-    {{-- <link rel="stylesheet" href="{{asset('/css/headerStyle.css')}}">  --}}
+    <link rel="stylesheet" href="{{asset('/css/headerStyle3.css')}}"> 
     <title>Jadwal Mengajar</title>
 
     
 </head>
 <body>
-    {{-- @include('content/header2') --}}
+    @include('content/header3')
     @yield('content')
 
     <script src="{{asset('js/util.js')}}"></script>
