@@ -99,236 +99,206 @@ class Seeder extends Migration
             [  'name' =>'Semester8','semester'=>null]
         );
 
+        // DB::table('matakuliah')->insert(
+        //     [  'name' =>'Topik Khusus Sistem Informasi 1','semester'=>6,'sks'=>3]
+        // );
+        
+        // DB::table('matakuliah')->insert(
+        //     [  'name' =>'Pemrograman Berbasis Web','semester'=>6]
+        // );
+        // DB::table('matakuliah')->insert(
+        //     [ 'name' =>'Sertifikasi Administrasi Jaringan Komputer 2','semester'=>6]
+        // );
+      
+        // DB::table('matakuliah')->insert(
+        //     [ 'name' =>'Permodelan untuk Komputasi','semester'=>6]
+        // );
+       
+       
+        // DB::table('matakuliah')->insert(
+        //     [ 'name' =>'Pemrograman Berbasis Web Lanjut','semester'=>6]
+        // );
+        // DB::table('matakuliah')->insert(
+        //     [ 'name' =>'Mekanika 1','semester'=>6]
+        // );
+       
+        // DB::table('matakuliah')->insert(
+        //     [ 'name' =>'Topik Khusus Sistem Informasi 2','semester'=>6]
+        // );
+       
+        // DB::table('matakuliah')->insert(
+        //     [ 'name' =>'Permodelan untuk Komputasi 2','semester'=>6]
+        // );
+        // DB::table('matakuliah')->insert(
+        //     [ 'name' =>'Pemrograman Kompetitif 2','semester'=>6]
+        // );
         DB::table('matakuliah')->insert(
-            [  'name' =>'Topik Khusus Sistem Informasi 1','semester'=>6]
+            [ 'name' =>'Proyek Informatika','semester'=>6,'sks'=>6,'singkatan'=>'ProIF']
         );
         DB::table('matakuliah')->insert(
-            [  'name' =>'Design dan Analisis Algoritma','semester'=>6]
+            [ 'name' =>'Proyek Sistem Informasi','semester'=>6,'sks'=>3,'singkatan'=>'ProSI']
         );
+       
+       
         DB::table('matakuliah')->insert(
-            [  'name' =>'Pemrograman Berbasis Web','semester'=>6]
+            [ 'name' =>'Algortima Kriptografi','semester'=>6,'singkatan'=>'AlKrip']
         );
         DB::table('matakuliah')->insert(
-            [ 'name' =>'Sertifikasi Administrasi Jaringan Komputer 2','semester'=>6]
+            [ 'name' =>'Teknologi Basis Data','semester'=>6,'sks'=>3,'singkatan'=>'TBD']
         );
+        // DB::table('matakuliah')->insert(
+        //     ['name' =>'Setifikasi Administrasi Jaringan Komputer 3','semester'=>6]
+        // );
+        // DB::table('matakuliah')->insert(
+        //     [ 'name' =>'Sistem E-Commerce','semester'=>6]
+        // );
+        // DB::table('matakuliah')->insert(
+        //     ['name' =>'Sistem Multi Agen','semester'=>6]
+        // );
+        // DB::table('matakuliah')->insert(
+        //     [ 'name' =>'Metode Numerik','semester'=>6]
+        // );
+        // DB::table('matakuliah')->insert(
+        //     [ 'name' =>'Penulisan Ilmiah','semester'=>6,'sks'=>2]
+        // );
+        // DB::table('matakuliah')->insert(
+        //     [ 'name' =>'Topik Khusus Informatika 2','semester'=>6]
+        // );
+        // DB::table('matakuliah')->insert(
+        //     [ 'name' =>'Intrumen dengan IoT','semester'=>6]
+        // );
+        // DB::table('matakuliah')->insert(
+        //     [ 'name' =>'Pemrograman Permainan Komputer','semester'=>6]
+        // );
+        // DB::table('matakuliah')->insert(
+        //     [ 'name' =>'Sertifikasi Administrasi Jaringan Komputer 4','semester'=>6]
+        // );
+        // DB::table('matakuliah')->insert(
+        //     [ 'name' =>'Topik Khusus Sistem Terdistribusi 2','semester'=>6]
+        // );
+        // DB::table('matakuliah')->insert(
+        //     [ 'name' =>'Topik Khusus Informatika','semester'=>6]
+        // );
+        // DB::table('matakuliah')->insert(
+        //     [ 'name' =>'Pemrograman Komputer','semester'=>6]
+        // );
+       
         DB::table('matakuliah')->insert(
-            [ 'name' =>'Matriks dan Ruang Vektor','semester'=>6]
+            [ 'name' =>'Jaringan Komputer','semester'=>6,'sks'=>2,'singkatan'=>'JarKom']
         );
         DB::table('matakuliah')->insert(
-            [ 'name' =>'Permodelan untuk Komputasi','semester'=>6]
+            [ 'name' =>'Pemodelan untuk Komputasi','semester'=>1,'sks'=>3,'singkatan'=>'PeKomp']
         );
         DB::table('matakuliah')->insert(
-            [ 'name' =>'Algoritma dan Struktur Data','semester'=>6]
+            [ 'name' =>'Matematika Dasar','semester'=>1,'sks'=>4,'singkatan'=>'MatDasar']
         );
         DB::table('matakuliah')->insert(
-            [ 'name' =>'Arsitektur dan Organisasi Komputer','semester'=>6]
+            [ 'name' =>'Pengantar Informatika','semester'=>1,'sks'=>2,'singkatan'=>'PengantarIF']
         );
         DB::table('matakuliah')->insert(
-            [ 'name' =>'Skripsi 2','semester'=>6]
+            [ 'name' =>'Matematika Diskret','semester'=>1,'sks'=>3,'singkatan'=>'MatDis']
         );
         DB::table('matakuliah')->insert(
-            [ 'name' =>'Skripsi 1','semester'=>6]
+            [ 'name' =>'Bahasa Indonesia','semester'=>1,'sks'=>2,'singkatan'=>'BI']
         );
         DB::table('matakuliah')->insert(
-            [ 'name' =>'Etika Profesi','semester'=>6]
+            [ 'name' =>'Pendidikan Kewarganegaraan','semester'=>1, 'sks'=>2,'singkatan'=>'KWN']
         );
         DB::table('matakuliah')->insert(
-            [ 'name' =>'Pemrograman Berbasis Web Lanjut','semester'=>6]
+            [ 'name' =>'Logika','semester'=>1,'sks'=>2,'singkatan'=>'Logika']
         );
         DB::table('matakuliah')->insert(
-            [ 'name' =>'Mekanika 1','semester'=>6]
+            [ 'name' =>'Dasar Pemrograman','semester'=>2,'sks'=>4,'singkatan'=>'DasPro']
         );
         DB::table('matakuliah')->insert(
-            [ 'name' =>'Dasar-dasar Pemrograman','semester'=>6]
+            [ 'name' =>'Arsitektur dan Organisasi Komputer','semester'=>2,'sks'=>4,'singkatan'=>'AOK']
         );
         DB::table('matakuliah')->insert(
-            [ 'name' =>'Manajemen Informasi dan Basis Data','semester'=>6]
+            [ 'name' =>'Logika informatika','semester'=>2,'sks'=>3,'singkatan'=>'LogikaIF']
         );
         DB::table('matakuliah')->insert(
-            [ 'name' =>'Topik Khusus Sistem Informasi 2','semester'=>6]
+            [ 'name' =>'Matriks dan Ruang Vektor','semester'=>2,'sks'=>3,'singkatan'=>'MRV']
         );
         DB::table('matakuliah')->insert(
-            [ 'name' =>'Pengantar Jaringan Komputer','semester'=>6]
+            [ 'name' =>'Etika','semester'=>2,'sks'=>2,'singkatan'=>'Etika']
         );
         DB::table('matakuliah')->insert(
-            [ 'name' =>'Permodelan untuk Komputasi 2','semester'=>6]
+            [ 'name' =>'Pancasila','semester'=>2,'sks'=>2,'singkatan'=>'Pancas']
         );
         DB::table('matakuliah')->insert(
-            [ 'name' =>'Pemrograman Kompetitif 2','semester'=>6]
+            [ 'name' =>'Algoritma dan Struktur Data','semester'=>3,'sks'=>3,'singkatan'=>'ASD']
         );
         DB::table('matakuliah')->insert(
-            [ 'name' =>'Proyek Informatika','semester'=>6]
+            [ 'name' =>'Struktur Diskret','semester'=>3,'sks'=>4,'singkatan'=>'StrukDis']
         );
         DB::table('matakuliah')->insert(
-            [ 'name' =>'Proyek Sistem Informasi','semester'=>6]
+            [ 'name' =>'Pemrograman Berorientasi Objek','semester'=>3,'sks'=>2,'singkatan'=>'PBO']
         );
         DB::table('matakuliah')->insert(
-            [ 'name' =>'Pengantar Sistem Informasi','semester'=>6]
+            [ 'name' =>'Teknik Presentasi','semester'=>3,'sks'=>2,'singkatan'=>'TekPresentasi']
         );
         DB::table('matakuliah')->insert(
-            [ 'name' =>'Logika Informatika','semester'=>6]
+            [ 'name' =>'Statistika untuk Komputasi','semester'=>3,'sks'=>3,'singkatan'=>'StatKomp']
         );
         DB::table('matakuliah')->insert(
-            [ 'name' =>'Algortima Kriptografi','semester'=>6]
+            [ 'name' =>'Agama Katolik/Fenomenologi Agama','semester'=>3,'sks'=>2,'singkatan'=>'Agama']
         );
         DB::table('matakuliah')->insert(
-            [ 'name' =>'Teknologi Basis Data','semester'=>6]
+            [ 'name' =>'Estetika','semester'=>3,'sks'=>2,'singkatan'=>'Estetika']
         );
         DB::table('matakuliah')->insert(
-            ['name' =>'Setifikasi Administrasi Jaringan Komputer 3','semester'=>6]
+            [ 'name' =>'Analisis dan Desain Perangkat Lunak','semester'=>4,'sks'=>4,'singkatan'=>'ADPL']
         );
         DB::table('matakuliah')->insert(
-            [ 'name' =>'Sistem E-Commerce','semester'=>6]
+            [ 'name' =>'Manajemen Informasi dan Basis Data','semester'=>4,'sks'=>4,'singkatan'=>'MIBD']
         );
         DB::table('matakuliah')->insert(
-            ['name' =>'Sistem Multi Agen','semester'=>6]
+            [ 'name' =>'Pemrograman Berbasis Web','semester'=>4,'sks'=>3,'singkatan'=>'PBW']
         );
         DB::table('matakuliah')->insert(
-            [ 'name' =>'Metode Numerik','semester'=>6]
+            [ 'name' =>'Desain dan Analisis Algoritma','semester'=>4,'sks'=>3,'singkatan'=>'DAA']
         );
         DB::table('matakuliah')->insert(
-            [ 'name' =>'Penulisan Ilmiah','semester'=>6]
+            [ 'name' =>'Pengantar Sistem Informasi','semester'=>4,'sks'=>3,'singkatan'=>'PSI']
         );
         DB::table('matakuliah')->insert(
-            [ 'name' =>'Topik Khusus Informatika 2','semester'=>6]
+            [ 'name' =>'Pengantar Jaringan Komputer','semester'=>4,'sks'=>2,'singkatan'=>'PJK']
         );
         DB::table('matakuliah')->insert(
-            [ 'name' =>'Intrumen dengan IoT','semester'=>6]
+            [ 'name' =>'Sistem Operasi','semester'=>5,'sks'=>3,'singkatan'=>'SO']
         );
         DB::table('matakuliah')->insert(
-            [ 'name' =>'Pemrograman Permainan Komputer','semester'=>6]
+            [ 'name' =>'Rekayasa Perangkat Lunak','semester'=>5,'sks'=>3,'singkatan'=>'RPL']
         );
         DB::table('matakuliah')->insert(
-            [ 'name' =>'Sertifikasi Administrasi Jaringan Komputer 4','semester'=>6]
+            [ 'name' =>'Manajemen Proyek','semester'=>5,'sks'=>2,'singkatan'=>'ManPro']
         );
         DB::table('matakuliah')->insert(
-            [ 'name' =>'Topik Khusus Sistem Terdistribusi 2','semester'=>6]
+            [ 'name' =>'Pengantar Sistem Cerdas','semester'=>5,'sks'=>3,'singkatan'=>'PSC']
         );
         DB::table('matakuliah')->insert(
-            [ 'name' =>'Topik Khusus Informatika','semester'=>6]
+            [ 'name' =>'Pemrograman pada Perangkat Bergerak','semester'=>5,'sks'=>3,'singkatan'=>'P3B']
         );
         DB::table('matakuliah')->insert(
-            [ 'name' =>'Pemrograman Komputer','semester'=>6]
+            [ 'name' =>'Interaksi Manusia Komputer','semester'=>5,'sks'=>3,'singkatan'=>'IMK']
         );
         DB::table('matakuliah')->insert(
-            [ 'name' =>'Analisis Design Perangkat Lunak','semester'=>6]
+            [ 'name' =>'Skripsi 1','semester'=>7,'sks'=>3,'singkatan'=>'Skripsi1']
         );
         DB::table('matakuliah')->insert(
-            [ 'name' =>'Jaringan Komputer','semester'=>6]
+            [ 'name' =>'Proyek Sistem Informasi 2','semester'=>7,'sks'=>3,'singkatan'=>'ProSI2']
         );
         DB::table('matakuliah')->insert(
-            [ 'name' =>'Pemodelan untuk Komputasi','semester'=>1]
+            [ 'name' =>'Komputer dan Masyarakat','semester'=>7,'sks'=>2,'singkatan'=>'KoMas']
         );
         DB::table('matakuliah')->insert(
-            [ 'name' =>'Matematika Dasar','semester'=>1]
+            [ 'name' =>'Etika Profesi','semester'=>8,'sks'=>2,'singkatan'=>'EtProf']
         );
         DB::table('matakuliah')->insert(
-            [ 'name' =>'Pengantar Informatika','semester'=>1]
+            [ 'name' =>'Skripsi 2','semester'=>8,'sks'=>5,'singkatan'=>'Skripsi2']
         );
         DB::table('matakuliah')->insert(
-            [ 'name' =>'Matematika Diskret','semester'=>1]
-        );
-        DB::table('matakuliah')->insert(
-            [ 'name' =>'Bahasa Indonesia','semester'=>1]
-        );
-        DB::table('matakuliah')->insert(
-            [ 'name' =>'Pendidikan Kewarganegaraan','semester'=>1]
-        );
-        DB::table('matakuliah')->insert(
-            [ 'name' =>'Logika','semester'=>1]
-        );
-        DB::table('matakuliah')->insert(
-            [ 'name' =>'Dasar Pemrograman','semester'=>2]
-        );
-        DB::table('matakuliah')->insert(
-            [ 'name' =>'Arsitektur dan Organisasi Komputer','semester'=>2]
-        );
-        DB::table('matakuliah')->insert(
-            [ 'name' =>'Logika informatika','semester'=>2]
-        );
-        DB::table('matakuliah')->insert(
-            [ 'name' =>'Matriks dan Ruang Vektor','semester'=>2]
-        );
-        DB::table('matakuliah')->insert(
-            [ 'name' =>'Etika','semester'=>2]
-        );
-        DB::table('matakuliah')->insert(
-            [ 'name' =>'Pancasila','semester'=>2]
-        );
-        DB::table('matakuliah')->insert(
-            [ 'name' =>'Algoritma dan Struktur Data','semester'=>3]
-        );
-        DB::table('matakuliah')->insert(
-            [ 'name' =>'Struktur Diskret','semester'=>3]
-        );
-        DB::table('matakuliah')->insert(
-            [ 'name' =>'Pemrograman Berorientasi Objek','semester'=>3]
-        );
-        DB::table('matakuliah')->insert(
-            [ 'name' =>'Teknik Presentasi','semester'=>3]
-        );
-        DB::table('matakuliah')->insert(
-            [ 'name' =>'Statistika untuk Komputasi','semester'=>3]
-        );
-        DB::table('matakuliah')->insert(
-            [ 'name' =>'Agama Katolik/Fenomenologi Agama','semester'=>3]
-        );
-        DB::table('matakuliah')->insert(
-            [ 'name' =>'Estetika','semester'=>3]
-        );
-        DB::table('matakuliah')->insert(
-            [ 'name' =>'Analisis dan Desain Perangkat Lunak','semester'=>4]
-        );
-        DB::table('matakuliah')->insert(
-            [ 'name' =>'Manajemen Informasi dan Basis Data','semester'=>4]
-        );
-        DB::table('matakuliah')->insert(
-            [ 'name' =>'Pemrograman Berbasis Web','semester'=>4]
-        );
-        DB::table('matakuliah')->insert(
-            [ 'name' =>'Desain dan Analisis Algoritma','semester'=>4]
-        );
-        DB::table('matakuliah')->insert(
-            [ 'name' =>'Pengantar Sistem Informasi','semester'=>4]
-        );
-        DB::table('matakuliah')->insert(
-            [ 'name' =>'Pengantar Jaringan Komputer','semester'=>4]
-        );
-        DB::table('matakuliah')->insert(
-            [ 'name' =>'Sistem Operasi','semester'=>5]
-        );
-        DB::table('matakuliah')->insert(
-            [ 'name' =>'Rekayasa Perangkat Lunak','semester'=>5]
-        );
-        DB::table('matakuliah')->insert(
-            [ 'name' =>'Manajemen Proyek','semester'=>5]
-        );
-        DB::table('matakuliah')->insert(
-            [ 'name' =>'Pengantar Sistem Cerdas','semester'=>5]
-        );
-        DB::table('matakuliah')->insert(
-            [ 'name' =>'Pemrograman pada Perangkat Bergerak','semester'=>5]
-        );
-        DB::table('matakuliah')->insert(
-            [ 'name' =>'Interaksi Manusia Komputer','semester'=>5]
-        );
-        DB::table('matakuliah')->insert(
-            [ 'name' =>'Skripsi 1','semester'=>7]
-        );
-        DB::table('matakuliah')->insert(
-            [ 'name' =>'Proyek Sistem Informasi 2','semester'=>7]
-        );
-        DB::table('matakuliah')->insert(
-            [ 'name' =>'Komputer dan Masyarakat','semester'=>7]
-        );
-        DB::table('matakuliah')->insert(
-            [ 'name' =>'Etika Profesi','semester'=>8]
-        );
-        DB::table('matakuliah')->insert(
-            [ 'name' =>'Skripsi 2','semester'=>8]
-        );
-        DB::table('matakuliah')->insert(
-            [ 'name' =>'Tugas Akhir','semester'=>8]
+            [ 'name' =>'Tugas Akhir','semester'=>8,'sks'=>8,'singkatan'=>'TA']
         );
         
         DB::table('ruangan')->insert(
