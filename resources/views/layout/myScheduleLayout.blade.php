@@ -11,9 +11,7 @@
     <link rel="stylesheet" href="{{asset('/css/style.css')}}">
     <link rel="stylesheet" href="{{asset('/css/button.css')}}">
     <link rel="stylesheet" href="{{asset('/css/headerStyle3.css')}}"> 
-    <title>Jadwal Mengajar</title>
-
-    
+    <title>Jadwal Mengajar</title>    
 </head>
 <body>
     @include('content/header3')

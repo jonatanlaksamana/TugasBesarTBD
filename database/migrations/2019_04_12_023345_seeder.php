@@ -1,10 +1,8 @@
 <?php
-
 use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Support\Facades\DB;
-
 class Seeder extends Migration
 {
     /**
@@ -63,30 +61,22 @@ class Seeder extends Migration
         DB::table('users')->insert(
             ['id' => 16, 'nama' => 'Janto','username' => 'janto16', 'password' => '012']
         );
-
         
-
-
         DB::table('matakuliah')->insert(
             [  'name' =>'Semester1','semester'=>null]
         );
-
         DB::table('matakuliah')->insert(
             [  'name' =>'Semester2','semester'=>null]
         );
-
         DB::table('matakuliah')->insert(
             [  'name' =>'Semester3','semester'=>null]
         );
-
         DB::table('matakuliah')->insert(
             [  'name' =>'Semester4','semester'=>null]
         );
-
         DB::table('matakuliah')->insert(
             [  'name' =>'Semester5','semester'=>null]
         );
-
         DB::table('matakuliah')->insert(
             [  'name' =>'Semester6','semester'=>null]
         );
@@ -94,10 +84,10 @@ class Seeder extends Migration
         DB::table('matakuliah')->insert(
             [  'name' =>'Semester7','semester'=>null]
         );
-
         DB::table('matakuliah')->insert(
             [  'name' =>'Semester8','semester'=>null]
         );
+
 
         // DB::table('matakuliah')->insert(
         //     [  'name' =>'Topik Khusus Sistem Informasi 1','semester'=>6,'sks'=>3]
@@ -344,283 +334,284 @@ class Seeder extends Migration
             ['idRoom' =>'10314' ,'kapasitas'=>0]
         );
 
+
         //senin
         DB::table('jadwals')->insert(
-            ['id'=>1,'idMk'=>5,'type'=>0,'hari'=>1,'idRoom'=>'9120','timeStart'=>'07:00:00','timeEnd'=>'10:00:00','durasi'=>2,'prioritas'=>2]
+            ['id'=>1,'idMk'=>8+5,'type'=>0,'hari'=>1,'idRoom'=>'9120','timeStart'=>'07:00:00','timeEnd'=>'10:00:00','durasi'=>2,'prioritas'=>2]
         );
         DB::table('jadwals')->insert(
-            ['id'=>2,'idMk'=>6,'type'=>0,'hari'=>1,'idRoom'=>'9120','timeStart'=>'10:00:00','timeEnd'=>'13:00:00','durasi'=>3,'prioritas'=>2]
+            ['id'=>2,'idMk'=>8+6,'type'=>0,'hari'=>1,'idRoom'=>'9120','timeStart'=>'10:00:00','timeEnd'=>'13:00:00','durasi'=>3,'prioritas'=>2]
         );
         DB::table('jadwals')->insert(
-            ['id'=>3,'idMk'=>8,'type'=>0,'hari'=>1,'idRoom'=>'9120','timeStart'=>'13:00:00','timeEnd'=>'15:00:00','durasi'=>2,'prioritas'=>2]
+            ['id'=>3,'idMk'=>8+8,'type'=>0,'hari'=>1,'idRoom'=>'9120','timeStart'=>'13:00:00','timeEnd'=>'15:00:00','durasi'=>2,'prioritas'=>2]
         );
         DB::table('jadwals')->insert(
-            ['id'=>4,'idMk'=>8,'type'=>0,'hari'=>1,'idRoom'=>'9120','timeStart'=>'15:00:00','timeEnd'=>'17:00:00','durasi'=>2,'prioritas'=>2]
+            ['id'=>4,'idMk'=>8+8,'type'=>0,'hari'=>1,'idRoom'=>'9120','timeStart'=>'15:00:00','timeEnd'=>'17:00:00','durasi'=>2,'prioritas'=>2]
         );
         DB::table('jadwals')->insert(
-            ['id'=>5,'idMk'=>5,'type'=>0,'hari'=>1,'idRoom'=>'9121','timeStart'=>'07:00:00','timeEnd'=>'10:00:00','durasi'=>3,'prioritas'=>2]
+            ['id'=>5,'idMk'=>8+5,'type'=>0,'hari'=>1,'idRoom'=>'9121','timeStart'=>'07:00:00','timeEnd'=>'10:00:00','durasi'=>3,'prioritas'=>2]
         );
         DB::table('jadwals')->insert(
-            ['id'=>6,'idMk'=>7,'type'=>0,'hari'=>1,'idRoom'=>'9121','timeStart'=>'10:00:00','timeEnd'=>'13:00:00','durasi'=>3,'prioritas'=>2]
+            ['id'=>6,'idMk'=>8+7,'type'=>0,'hari'=>1,'idRoom'=>'9121','timeStart'=>'10:00:00','timeEnd'=>'13:00:00','durasi'=>3,'prioritas'=>2]
         );
         DB::table('jadwals')->insert(
-            ['id'=>7,'idMk'=>25,'type'=>0,'hari'=>1,'idRoom'=>'9121','timeStart'=>'13:00:00','timeEnd'=>'15:00:00','durasi'=>2,'prioritas'=>2]
+            ['id'=>7,'idMk'=>8+25,'type'=>0,'hari'=>1,'idRoom'=>'9121','timeStart'=>'13:00:00','timeEnd'=>'15:00:00','durasi'=>2,'prioritas'=>2]
         );
         DB::table('jadwals')->insert(
-            ['id'=>8,'idMk'=>36,'type'=>0,'hari'=>1,'idRoom'=>'9122','timeStart'=>'07:00:00','timeEnd'=>'09:00:00','durasi'=>2,'prioritas'=>2]
+            ['id'=>8,'idMk'=>8+36,'type'=>0,'hari'=>1,'idRoom'=>'9122','timeStart'=>'07:00:00','timeEnd'=>'09:00:00','durasi'=>2,'prioritas'=>2]
         );
         DB::table('jadwals')->insert(
-            ['id'=>9,'idMk'=>11,'type'=>0,'hari'=>1,'idRoom'=>'9122','timeStart'=>'11:00:00','timeEnd'=>'13:00:00','durasi'=>2,'prioritas'=>2]
+            ['id'=>9,'idMk'=>8+11,'type'=>0,'hari'=>1,'idRoom'=>'9122','timeStart'=>'11:00:00','timeEnd'=>'13:00:00','durasi'=>2,'prioritas'=>2]
         );
         DB::table('jadwals')->insert(
-            ['id'=>10,'idMk'=>25,'type'=>0,'hari'=>1,'idRoom'=>'9122','timeStart'=>'13:00:00','timeEnd'=>'15:00:00','durasi'=>2,'prioritas'=>2]
+            ['id'=>10,'idMk'=>8+25,'type'=>0,'hari'=>1,'idRoom'=>'9122','timeStart'=>'13:00:00','timeEnd'=>'15:00:00','durasi'=>2,'prioritas'=>2]
         );
         DB::table('jadwals')->insert(
-            ['id'=>11,'idMk'=>2,'type'=>0,'hari'=>1,'idRoom'=>'10316','timeStart'=>'07:00:00','timeEnd'=>'09:00:00','durasi'=>2,'prioritas'=>2]
+            ['id'=>11,'idMk'=>8+2,'type'=>0,'hari'=>1,'idRoom'=>'10316','timeStart'=>'07:00:00','timeEnd'=>'09:00:00','durasi'=>2,'prioritas'=>2]
         );
         DB::table('jadwals')->insert(
-            ['id'=>12,'idMk'=>2,'type'=>0,'hari'=>1,'idRoom'=>'10316','timeStart'=>'10:00:00','timeEnd'=>'13:00:00','durasi'=>2,'prioritas'=>2]
+            ['id'=>12,'idMk'=>8+2,'type'=>0,'hari'=>1,'idRoom'=>'10316','timeStart'=>'10:00:00','timeEnd'=>'13:00:00','durasi'=>2,'prioritas'=>2]
         );
         DB::table('jadwals')->insert(
-            ['id'=>13,'idMk'=>9,'type'=>0,'hari'=>1,'idRoom'=>'10316','timeStart'=>'13:00:00','timeEnd'=>'15:00:00','durasi'=>2,'prioritas'=>2]
+            ['id'=>13,'idMk'=>8+9,'type'=>0,'hari'=>1,'idRoom'=>'10316','timeStart'=>'13:00:00','timeEnd'=>'15:00:00','durasi'=>2,'prioritas'=>2]
         );
         DB::table('jadwals')->insert(
-            ['id'=>14,'idMk'=>9,'type'=>0,'hari'=>1,'idRoom'=>'10317','timeStart'=>'13:00:00','timeEnd'=>'15:00:00','durasi'=>2,'prioritas'=>2]
+            ['id'=>14,'idMk'=>8+9,'type'=>0,'hari'=>1,'idRoom'=>'10317','timeStart'=>'13:00:00','timeEnd'=>'15:00:00','durasi'=>2,'prioritas'=>2]
         );
         DB::table('jadwals')->insert(
-            ['id'=>15,'idMk'=>10,'type'=>0,'hari'=>1,'idRoom'=>'10317','timeStart'=>'14:00:00','timeEnd'=>'16:00:00','durasi'=>2,'prioritas'=>2]
+            ['id'=>15,'idMk'=>8+10,'type'=>0,'hari'=>1,'idRoom'=>'10317','timeStart'=>'14:00:00','timeEnd'=>'16:00:00','durasi'=>2,'prioritas'=>2]
         );
         DB::table('jadwals')->insert(
-            ['id'=>16,'idMk'=>11,'type'=>0,'hari'=>1,'idRoom'=>'10317','timeStart'=>'15:00:00','timeEnd'=>'17:00:00','durasi'=>2,'prioritas'=>2]
+            ['id'=>16,'idMk'=>8+11,'type'=>0,'hari'=>1,'idRoom'=>'10317','timeStart'=>'15:00:00','timeEnd'=>'17:00:00','durasi'=>2,'prioritas'=>2]
         );
         DB::table('jadwals')->insert(
-            ['id'=>17,'idMk'=>35,'type'=>0,'hari'=>1,'idRoom'=>'SB-914','timeStart'=>'10:00:00','timeEnd'=>'13:00:00','durasi'=>3,'prioritas'=>2]
+            ['id'=>17,'idMk'=>8+35,'type'=>0,'hari'=>1,'idRoom'=>'SB-914','timeStart'=>'10:00:00','timeEnd'=>'13:00:00','durasi'=>3,'prioritas'=>2]
         );
         DB::table('jadwals')->insert(
-            ['id'=>18,'idMk'=>3,'type'=>0,'hari'=>1,'idRoom'=>'SB-916','timeStart'=>'07:00:00','timeEnd'=>'10:00:00','durasi'=>3,'prioritas'=>2]
+            ['id'=>18,'idMk'=>8+3,'type'=>0,'hari'=>1,'idRoom'=>'SB-916','timeStart'=>'07:00:00','timeEnd'=>'10:00:00','durasi'=>3,'prioritas'=>2]
         );
         DB::table('jadwals')->insert(
-            ['id'=>19,'idMk'=>3,'type'=>0,'hari'=>1,'idRoom'=>'SB-916','timeStart'=>'10:00:00','timeEnd'=>'13:00:00','durasi'=>3,'prioritas'=>2]
+            ['id'=>19,'idMk'=>8+3,'type'=>0,'hari'=>1,'idRoom'=>'SB-916','timeStart'=>'10:00:00','timeEnd'=>'13:00:00','durasi'=>3,'prioritas'=>2]
         );
         DB::table('jadwals')->insert(
-            ['id'=>20,'idMk'=>12,'type'=>0,'hari'=>1,'idRoom'=>'SB-916','timeStart'=>'14:00:00','timeEnd'=>'17:00:00','durasi'=>3,'prioritas'=>2]
+            ['id'=>20,'idMk'=>8+12,'type'=>0,'hari'=>1,'idRoom'=>'SB-916','timeStart'=>'14:00:00','timeEnd'=>'17:00:00','durasi'=>3,'prioritas'=>2]
         );
         DB::table('jadwals')->insert(
-            ['id'=>21,'idMk'=>4,'type'=>0,'hari'=>1,'idRoom'=>'SB-917','timeStart'=>'07:00:00','timeEnd'=>'10:00:00','durasi'=>3,'prioritas'=>2]
+            ['id'=>21,'idMk'=>8+4,'type'=>0,'hari'=>1,'idRoom'=>'SB-917','timeStart'=>'07:00:00','timeEnd'=>'10:00:00','durasi'=>3,'prioritas'=>2]
         );
         DB::table('jadwals')->insert(
-            ['id'=>22,'idMk'=>37,'type'=>0,'hari'=>1,'idRoom'=>'SB-918','timeStart'=>'10:00:00','timeEnd'=>'13:00:00','durasi'=>3,'prioritas'=>2]
-        );
+            ['id'=>22,'idMk'=>8+37,'type'=>0,'hari'=>1,'idRoom'=>'SB-918','timeStart'=>'10:00:00','timeEnd'=>'13:00:00','durasi'=>3,'prioritas'=>2]
 
+        );
         //selasa
         DB::table('jadwals')->insert(
-            ['id'=>23,'idMk'=>1,'type'=>0,'hari'=>2,'idRoom'=>'9122','timeStart'=>'07:00:00','timeEnd'=>'09:00:00','durasi'=>2,'prioritas'=>2]
+
+            ['id'=>23,'idMk'=>8+1,'type'=>0,'hari'=>2,'idRoom'=>'9122','timeStart'=>'07:00:00','timeEnd'=>'09:00:00','durasi'=>2,'prioritas'=>2]
         );
         DB::table('jadwals')->insert(
-            ['id'=>24,'idMk'=>37,'type'=>0,'hari'=>2,'idRoom'=>'10316','timeStart'=>'07:00:00','timeEnd'=>'09:00:00','durasi'=>2,'prioritas'=>2]
+            ['id'=>24,'idMk'=>8+37,'type'=>0,'hari'=>2,'idRoom'=>'10316','timeStart'=>'07:00:00','timeEnd'=>'09:00:00','durasi'=>2,'prioritas'=>2]
         );
         DB::table('jadwals')->insert(
-            ['id'=>25,'idMk'=>15,'type'=>0,'hari'=>2,'idRoom'=>'10317','timeStart'=>'07:00:00','timeEnd'=>'09:00:00','durasi'=>2,'prioritas'=>2]
+            ['id'=>25,'idMk'=>8+15,'type'=>0,'hari'=>2,'idRoom'=>'10317','timeStart'=>'07:00:00','timeEnd'=>'09:00:00','durasi'=>2,'prioritas'=>2]
         );
         DB::table('jadwals')->insert(
-            ['id'=>26,'idMk'=>16,'type'=>0,'hari'=>2,'idRoom'=>'SB-914','timeStart'=>'07:00:00','timeEnd'=>'10:00:00','durasi'=>3,'prioritas'=>2]
+            ['id'=>26,'idMk'=>8+16,'type'=>0,'hari'=>2,'idRoom'=>'SB-914','timeStart'=>'07:00:00','timeEnd'=>'10:00:00','durasi'=>3,'prioritas'=>2]
         );
         DB::table('jadwals')->insert(
-            ['id'=>27,'idMk'=>14,'type'=>0,'hari'=>2,'idRoom'=>'9122','timeStart'=>'09:00:00','timeEnd'=>'11:00:00','durasi'=>2,'prioritas'=>2]
+            ['id'=>27,'idMk'=>8+14,'type'=>0,'hari'=>2,'idRoom'=>'9122','timeStart'=>'09:00:00','timeEnd'=>'11:00:00','durasi'=>2,'prioritas'=>2]
         );
         DB::table('jadwals')->insert(
-            ['id'=>28,'idMk'=>14,'type'=>0,'hari'=>2,'idRoom'=>'10316','timeStart'=>'09:00:00','timeEnd'=>'11:00:00','durasi'=>2,'prioritas'=>2]
+            ['id'=>28,'idMk'=>8+14,'type'=>0,'hari'=>2,'idRoom'=>'10316','timeStart'=>'09:00:00','timeEnd'=>'11:00:00','durasi'=>2,'prioritas'=>2]
         );
         DB::table('jadwals')->insert(
-            ['id'=>29,'idMk'=>14,'type'=>0,'hari'=>2,'idRoom'=>'10317','timeStart'=>'09:00:00','timeEnd'=>'11:00:00','durasi'=>2,'prioritas'=>2]
+            ['id'=>29,'idMk'=>8+14,'type'=>0,'hari'=>2,'idRoom'=>'10317','timeStart'=>'09:00:00','timeEnd'=>'11:00:00','durasi'=>2,'prioritas'=>2]
         );
         DB::table('jadwals')->insert(
-            ['id'=>30,'idMk'=>17,'type'=>0,'hari'=>2,'idRoom'=>'10322','timeStart'=>'09:00:00','timeEnd'=>'11:00:00','durasi'=>2,'prioritas'=>2]
+            ['id'=>30,'idMk'=>8+17,'type'=>0,'hari'=>2,'idRoom'=>'10322','timeStart'=>'09:00:00','timeEnd'=>'11:00:00','durasi'=>2,'prioritas'=>2]
         );
         DB::table('jadwals')->insert(
-            ['id'=>31,'idMk'=>19,'type'=>0,'hari'=>2,'idRoom'=>'SB-915','timeStart'=>'11:00:00','timeEnd'=>'14:00:00','durasi'=>3,'prioritas'=>2]
+            ['id'=>31,'idMk'=>8+19,'type'=>0,'hari'=>2,'idRoom'=>'SB-915','timeStart'=>'11:00:00','timeEnd'=>'14:00:00','durasi'=>3,'prioritas'=>2]
         );
         DB::table('jadwals')->insert(
-            ['id'=>32,'idMk'=>17,'type'=>0,'hari'=>2,'idRoom'=>'9122','timeStart'=>'13:00:00','timeEnd'=>'15:00:00','durasi'=>2,'prioritas'=>2]
+            ['id'=>32,'idMk'=>8+17,'type'=>0,'hari'=>2,'idRoom'=>'9122','timeStart'=>'13:00:00','timeEnd'=>'15:00:00','durasi'=>2,'prioritas'=>2]
         );
         DB::table('jadwals')->insert(
-            ['id'=>33,'idMk'=>6,'type'=>1,'hari'=>2,'idRoom'=>'10316','timeStart'=>'13:00:00','timeEnd'=>'15:00:00','durasi'=>2,'prioritas'=>1]
+            ['id'=>33,'idMk'=>8+6,'type'=>1,'hari'=>2,'idRoom'=>'10316','timeStart'=>'13:00:00','timeEnd'=>'15:00:00','durasi'=>2,'prioritas'=>1]
         );
         DB::table('jadwals')->insert(
-            ['id'=>34,'idMk'=>20,'type'=>1,'hari'=>2,'idRoom'=>'SB-915','timeStart'=>'14:00:00','timeEnd'=>'17:00:00','durasi'=>3,'prioritas'=>1]
+            ['id'=>34,'idMk'=>8+20,'type'=>1,'hari'=>2,'idRoom'=>'SB-915','timeStart'=>'14:00:00','timeEnd'=>'17:00:00','durasi'=>3,'prioritas'=>1]
         );
         DB::table('jadwals')->insert(
-            ['id'=>35,'idMk'=>21,'type'=>1,'hari'=>2,'idRoom'=>'SB-916','timeStart'=>'13:00:00','timeEnd'=>'16:00:00','durasi'=>3,'prioritas'=>1]
+            ['id'=>35,'idMk'=>8+21,'type'=>1,'hari'=>2,'idRoom'=>'SB-916','timeStart'=>'13:00:00','timeEnd'=>'16:00:00','durasi'=>3,'prioritas'=>1]
         );
         DB::table('jadwals')->insert(
-            ['id'=>36,'idMk'=>37,'type'=>1,'hari'=>2,'idRoom'=>'SB-918','timeStart'=>'13:00:00','timeEnd'=>'15:00:00','durasi'=>2,'prioritas'=>1]
+            ['id'=>36,'idMk'=>8+37,'type'=>1,'hari'=>2,'idRoom'=>'SB-918','timeStart'=>'13:00:00','timeEnd'=>'15:00:00','durasi'=>2,'prioritas'=>1]
         );
         DB::table('jadwals')->insert(
-            ['id'=>37,'idMk'=>3,'type'=>1,'hari'=>2,'idRoom'=>'SB-917','timeStart'=>'15:00:00','timeEnd'=>'17:00:00','durasi'=>2,'prioritas'=>1]
+            ['id'=>37,'idMk'=>8+3,'type'=>1,'hari'=>2,'idRoom'=>'SB-917','timeStart'=>'15:00:00','timeEnd'=>'17:00:00','durasi'=>2,'prioritas'=>1]
         );
         DB::table('jadwals')->insert(
-            ['id'=>38,'idMk'=>3,'type'=>1,'hari'=>2,'idRoom'=>'SB-918','timeStart'=>'15:00:00','timeEnd'=>'17:00:00','durasi'=>2,'prioritas'=>1]
+            ['id'=>38,'idMk'=>8+3,'type'=>1,'hari'=>2,'idRoom'=>'SB-918','timeStart'=>'15:00:00','timeEnd'=>'17:00:00','durasi'=>2,'prioritas'=>1]
 
         );
-
         //rabu
             //-- ID DIMULAI DARI 70 :))
             DB::table('jadwals')->insert(
-                ['id'=>88,'idMk'=>25,'type'=>1,'hari'=>3,'idRoom'=>'SB-915','timeStart'=>'11:00:00','timeEnd'=>'13:00:00','durasi'=>2,'prioritas'=>1]
+                ['id'=>88,'idMk'=>8+25,'type'=>1,'hari'=>3,'idRoom'=>'SB-915','timeStart'=>'11:00:00','timeEnd'=>'13:00:00','durasi'=>2,'prioritas'=>1]
             );
             DB::table('jadwals')->insert(
-                ['id'=>71,'idMk'=>25,'type'=>1,'hari'=>3,'idRoom'=>'SB-916','timeStart'=>'11:00:00','timeEnd'=>'13:00:00','durasi'=>2,'prioritas'=>1]
+                ['id'=>71,'idMk'=>8+25,'type'=>1,'hari'=>3,'idRoom'=>'SB-916','timeStart'=>'11:00:00','timeEnd'=>'13:00:00','durasi'=>2,'prioritas'=>1]
             );
             DB::table('jadwals')->insert(
-                ['id'=>72,'idMk'=>38,'type'=>0,'hari'=>3,'idRoom'=>'10316','timeStart'=>'07:00:00','timeEnd'=>'09:00:00','durasi'=>2,'prioritas'=>2]
+                ['id'=>72,'idMk'=>8+38,'type'=>0,'hari'=>3,'idRoom'=>'10316','timeStart'=>'07:00:00','timeEnd'=>'09:00:00','durasi'=>2,'prioritas'=>2]
             );
             DB::table('jadwals')->insert(
-                ['id'=>73,'idMk'=>15,'type'=>0,'hari'=>3,'idRoom'=>'9122','timeStart'=>'07:00:00','timeEnd'=>'09:00:00','durasi'=>2,'prioritas'=>2]
+                ['id'=>73,'idMk'=>8+15,'type'=>0,'hari'=>3,'idRoom'=>'9122','timeStart'=>'07:00:00','timeEnd'=>'09:00:00','durasi'=>2,'prioritas'=>2]
             );
             DB::table('jadwals')->insert(
-                ['id'=>74,'idMk'=>24,'type'=>0,'hari'=>3,'idRoom'=>'10317','timeStart'=>'07:00:00','timeEnd'=>'09:00:00','durasi'=>2,'prioritas'=>2]
+                ['id'=>74,'idMk'=>8+24,'type'=>0,'hari'=>3,'idRoom'=>'10317','timeStart'=>'07:00:00','timeEnd'=>'09:00:00','durasi'=>2,'prioritas'=>2]
             );
             DB::table('jadwals')->insert(
-                ['id'=>75,'idMk'=>7,'type'=>1,'hari'=>3,'idRoom'=>'SB-915','timeStart'=>'07:00:00','timeEnd'=>'09:00:00','durasi'=>2,'prioritas'=>1]
+                ['id'=>75,'idMk'=>8+7,'type'=>1,'hari'=>3,'idRoom'=>'SB-915','timeStart'=>'07:00:00','timeEnd'=>'09:00:00','durasi'=>2,'prioritas'=>1]
             );
             DB::table('jadwals')->insert(
-                ['id'=>76,'idMk'=>14,'type'=>1,'hari'=>3,'idRoom'=>'SB-916','timeStart'=>'07:00:00','timeEnd'=>'09:00:00','durasi'=>2,'prioritas'=>1]
+                ['id'=>76,'idMk'=>8+14,'type'=>1,'hari'=>3,'idRoom'=>'SB-916','timeStart'=>'07:00:00','timeEnd'=>'09:00:00','durasi'=>2,'prioritas'=>1]
             );
             DB::table('jadwals')->insert(
-                ['id'=>77,'idMk'=>14,'type'=>1,'hari'=>3,'idRoom'=>'SB-917','timeStart'=>'07:00:00','timeEnd'=>'09:00:00','durasi'=>2,'prioritas'=>1]
+                ['id'=>77,'idMk'=>8+14,'type'=>1,'hari'=>3,'idRoom'=>'SB-917','timeStart'=>'07:00:00','timeEnd'=>'09:00:00','durasi'=>2,'prioritas'=>1]
             );
             DB::table('jadwals')->insert(
-                ['id'=>78,'idMk'=>14,'type'=>1,'hari'=>3,'idRoom'=>'SB-918','timeStart'=>'07:00:00','timeEnd'=>'09:00:00','durasi'=>2,'prioritas'=>1]
+                ['id'=>78,'idMk'=>8+14,'type'=>1,'hari'=>3,'idRoom'=>'SB-918','timeStart'=>'07:00:00','timeEnd'=>'09:00:00','durasi'=>2,'prioritas'=>1]
             );
             DB::table('jadwals')->insert(
-                ['id'=>79,'idMk'=>2,'type'=>1,'hari'=>3,'idRoom'=>'SB-915','timeStart'=>'09:00:00','timeEnd'=>'11:00:00','durasi'=>2,'prioritas'=>1]
+                ['id'=>79,'idMk'=>8+2,'type'=>1,'hari'=>3,'idRoom'=>'SB-915','timeStart'=>'09:00:00','timeEnd'=>'11:00:00','durasi'=>2,'prioritas'=>1]
             );
             DB::table('jadwals')->insert(
-                ['id'=>80,'idMk'=>2,'type'=>1,'hari'=>3,'idRoom'=>'SB-917','timeStart'=>'09:00:00','timeEnd'=>'11:00:00','durasi'=>2,'prioritas'=>1]
+                ['id'=>80,'idMk'=>8+2,'type'=>1,'hari'=>3,'idRoom'=>'SB-917','timeStart'=>'09:00:00','timeEnd'=>'11:00:00','durasi'=>2,'prioritas'=>1]
             );
             DB::table('jadwals')->insert(
-                ['id'=>81,'idMk'=>23,'type'=>0,'hari'=>3,'idRoom'=>'10316','timeStart'=>'10:00:00','timeEnd'=>'13:00:00','durasi'=>3,'prioritas'=>2]
+                ['id'=>81,'idMk'=>8+23,'type'=>0,'hari'=>3,'idRoom'=>'10316','timeStart'=>'10:00:00','timeEnd'=>'13:00:00','durasi'=>3,'prioritas'=>2]
             );
             DB::table('jadwals')->insert(
-                ['id'=>82,'idMk'=>23,'type'=>0,'hari'=>3,'idRoom'=>'10317','timeStart'=>'10:00:00','timeEnd'=>'13:00:00','durasi'=>3,'prioritas'=>2]
+                ['id'=>82,'idMk'=>8+23,'type'=>0,'hari'=>3,'idRoom'=>'10317','timeStart'=>'10:00:00','timeEnd'=>'13:00:00','durasi'=>3,'prioritas'=>2]
             );
             DB::table('jadwals')->insert(
-                ['id'=>83,'idMk'=>22,'type'=>0,'hari'=>3,'idRoom'=>'9121','timeStart'=>'13:00:00','timeEnd'=>'16:00:00','durasi'=>3,'prioritas'=>2]
+                ['id'=>83,'idMk'=>8+22,'type'=>0,'hari'=>3,'idRoom'=>'9121','timeStart'=>'13:00:00','timeEnd'=>'16:00:00','durasi'=>3,'prioritas'=>2]
             );
             DB::table('jadwals')->insert(
-                ['id'=>84,'idMk'=>27,'type'=>0,'hari'=>3,'idRoom'=>'9122','timeStart'=>'13:00:00','timeEnd'=>'16:00:00','durasi'=>3,'prioritas'=>2]
+                ['id'=>84,'idMk'=>8+27,'type'=>0,'hari'=>3,'idRoom'=>'9122','timeStart'=>'13:00:00','timeEnd'=>'16:00:00','durasi'=>3,'prioritas'=>2]
             );
             DB::table('jadwals')->insert(
-                ['id'=>85,'idMk'=>26,'type'=>1,'hari'=>3,'idRoom'=>'SB-918','timeStart'=>'13:00:00','timeEnd'=>'16:00:00','durasi'=>3,'prioritas'=>1]
+                ['id'=>85,'idMk'=>8+26,'type'=>1,'hari'=>3,'idRoom'=>'SB-918','timeStart'=>'13:00:00','timeEnd'=>'16:00:00','durasi'=>3,'prioritas'=>1]
             );
             DB::table('jadwals')->insert(
-                ['id'=>86,'idMk'=>37,'type'=>1,'hari'=>3,'idRoom'=>'SB-917','timeStart'=>'15:00:00','timeEnd'=>'17:00:00','durasi'=>2,'prioritas'=>1]
-            );
+                ['id'=>86,'idMk'=>8+37,'type'=>1,'hari'=>3,'idRoom'=>'SB-917','timeStart'=>'15:00:00','timeEnd'=>'17:00:00','durasi'=>2,'prioritas'=>1]
 
-
+            );
         //kamis
         DB::table('jadwals')->insert(
-            ['id'=>87,'idMk'=>8,'type'=>0,'hari'=>4,'idRoom'=>'9121','timeStart'=>'13:00:00','timeEnd'=>'15:00:00','durasi'=>2,'prioritas'=>2]
+            ['id'=>87,'idMk'=>8+8,'type'=>0,'hari'=>4,'idRoom'=>'9121','timeStart'=>'13:00:00','timeEnd'=>'15:00:00','durasi'=>2,'prioritas'=>2]
         );
         DB::table('jadwals')->insert(
-            ['id'=>39,'idMk'=>8,'type'=>0,'hari'=>4,'idRoom'=>'9121','timeStart'=>'15:00:00','timeEnd'=>'17:00:00','durasi'=>2,'prioritas'=>2]
+            ['id'=>39,'idMk'=>8+8,'type'=>0,'hari'=>4,'idRoom'=>'9121','timeStart'=>'15:00:00','timeEnd'=>'17:00:00','durasi'=>2,'prioritas'=>2]
         );
         DB::table('jadwals')->insert(
-            ['id'=>40,'idMk'=>15,'type'=>0,'hari'=>4,'idRoom'=>'9122','timeStart'=>'07:00:00','timeEnd'=>'09:00:00','durasi'=>2,'prioritas'=>2]
+            ['id'=>40,'idMk'=>8+15,'type'=>0,'hari'=>4,'idRoom'=>'9122','timeStart'=>'07:00:00','timeEnd'=>'09:00:00','durasi'=>2,'prioritas'=>2]
         );
         DB::table('jadwals')->insert(
-            ['id'=>41,'idMk'=>15,'type'=>0,'hari'=>4,'idRoom'=>'9122','timeStart'=>'09:00:00','timeEnd'=>'11:00:00','durasi'=>2,'prioritas'=>2]
+            ['id'=>41,'idMk'=>8+15,'type'=>0,'hari'=>4,'idRoom'=>'9122','timeStart'=>'09:00:00','timeEnd'=>'11:00:00','durasi'=>2,'prioritas'=>2]
         );
         DB::table('jadwals')->insert(
-            ['id'=>42,'idMk'=>5,'type'=>1,'hari'=>4,'idRoom'=>'9122','timeStart'=>'13:00:00','timeEnd'=>'15:00:00','durasi'=>2,'prioritas'=>1]
+            ['id'=>42,'idMk'=>8+5,'type'=>1,'hari'=>4,'idRoom'=>'9122','timeStart'=>'13:00:00','timeEnd'=>'15:00:00','durasi'=>2,'prioritas'=>1]
         );
         DB::table('jadwals')->insert(
-            ['id'=>43,'idMk'=>5,'type'=>1,'hari'=>4,'idRoom'=>'9122','timeStart'=>'15:00:00','timeEnd'=>'17:00:00','durasi'=>2,'prioritas'=>1]
+            ['id'=>43,'idMk'=>8+5,'type'=>1,'hari'=>4,'idRoom'=>'9122','timeStart'=>'15:00:00','timeEnd'=>'17:00:00','durasi'=>2,'prioritas'=>1]
         );
         DB::table('jadwals')->insert(
-            ['id'=>44,'idMk'=>38,'type'=>0,'hari'=>4,'idRoom'=>'10316','timeStart'=>'07:00:00','timeEnd'=>'09:00:00','durasi'=>2,'prioritas'=>2]
+            ['id'=>44,'idMk'=>8+38,'type'=>0,'hari'=>4,'idRoom'=>'10316','timeStart'=>'07:00:00','timeEnd'=>'09:00:00','durasi'=>2,'prioritas'=>2]
         );
         DB::table('jadwals')->insert(
-            ['id'=>45,'idMk'=>38,'type'=>0,'hari'=>4,'idRoom'=>'10316','timeStart'=>'09:00:00','timeEnd'=>'11:00:00','durasi'=>2,'prioritas'=>2]
+            ['id'=>45,'idMk'=>8+38,'type'=>0,'hari'=>4,'idRoom'=>'10316','timeStart'=>'09:00:00','timeEnd'=>'11:00:00','durasi'=>2,'prioritas'=>2]
         );
         DB::table('jadwals')->insert(
-            ['id'=>46,'idMk'=>28,'type'=>0,'hari'=>4,'idRoom'=>'10317','timeStart'=>'07:00:00','timeEnd'=>'09:00:00','durasi'=>2,'prioritas'=>2]
+            ['id'=>46,'idMk'=>8+28,'type'=>0,'hari'=>4,'idRoom'=>'10317','timeStart'=>'07:00:00','timeEnd'=>'09:00:00','durasi'=>2,'prioritas'=>2]
         );
         DB::table('jadwals')->insert(
-            ['id'=>47,'idMk'=>29,'type'=>0,'hari'=>4,'idRoom'=>'10317','timeStart'=>'09:00:00','timeEnd'=>'12:00:00','durasi'=>3,'prioritas'=>2]
+            ['id'=>47,'idMk'=>8+29,'type'=>0,'hari'=>4,'idRoom'=>'10317','timeStart'=>'09:00:00','timeEnd'=>'12:00:00','durasi'=>3,'prioritas'=>2]
         );
         DB::table('jadwals')->insert(
-            ['id'=>48,'idMk'=>2,'type'=>1,'hari'=>4,'idRoom'=>'SB-915','timeStart'=>'15:00:00','timeEnd'=>'17:00:00','durasi'=>2,'prioritas'=>1]
+            ['id'=>48,'idMk'=>8+2,'type'=>1,'hari'=>4,'idRoom'=>'SB-915','timeStart'=>'15:00:00','timeEnd'=>'17:00:00','durasi'=>2,'prioritas'=>1]
         );
         DB::table('jadwals')->insert(
-            ['id'=>49,'idMk'=>2,'type'=>1,'hari'=>4,'idRoom'=>'SB-916','timeStart'=>'15:00:00','timeEnd'=>'17:00:00','durasi'=>2,'prioritas'=>1]
+            ['id'=>49,'idMk'=>8+2,'type'=>1,'hari'=>4,'idRoom'=>'SB-916','timeStart'=>'15:00:00','timeEnd'=>'17:00:00','durasi'=>2,'prioritas'=>1]
         );
         DB::table('jadwals')->insert(
-            ['id'=>50,'idMk'=>34,'type'=>0,'hari'=>4,'idRoom'=>'SB-917','timeStart'=>'09:00:00','timeEnd'=>'12:00:00','durasi'=>3,'prioritas'=>2]
+            ['id'=>50,'idMk'=>8+34,'type'=>0,'hari'=>4,'idRoom'=>'SB-917','timeStart'=>'09:00:00','timeEnd'=>'12:00:00','durasi'=>3,'prioritas'=>2]
         );
         DB::table('jadwals')->insert(
-            ['id'=>51,'idMk'=>20,'type'=>0,'hari'=>4,'idRoom'=>'SB-917','timeStart'=>'12:00:00','timeEnd'=>'15:00:00','durasi'=>3,'prioritas'=>2]
+            ['id'=>51,'idMk'=>8+20,'type'=>0,'hari'=>4,'idRoom'=>'SB-917','timeStart'=>'12:00:00','timeEnd'=>'15:00:00','durasi'=>3,'prioritas'=>2]
         );
         DB::table('jadwals')->insert(
-            ['id'=>52,'idMk'=>26,'type'=>1,'hari'=>4,'idRoom'=>'SB-917','timeStart'=>'15:00:00','timeEnd'=>'17:00:00','durasi'=>2,'prioritas'=>1]
+            ['id'=>52,'idMk'=>8+26,'type'=>1,'hari'=>4,'idRoom'=>'SB-917','timeStart'=>'15:00:00','timeEnd'=>'17:00:00','durasi'=>2,'prioritas'=>1]
         );
         DB::table('jadwals')->insert(
-            ['id'=>53,'idMk'=>21,'type'=>1,'hari'=>4,'idRoom'=>'SB-918','timeStart'=>'13:00:00','timeEnd'=>'15:00:00','durasi'=>2,'prioritas'=>1]
-        );
+            ['id'=>53,'idMk'=>8+21,'type'=>1,'hari'=>4,'idRoom'=>'SB-918','timeStart'=>'13:00:00','timeEnd'=>'15:00:00','durasi'=>2,'prioritas'=>1]
 
+        );
         //jumat
         DB::table('jadwals')->insert(
-            ['id'=>54,'idMk'=>22,'type'=>0,'hari'=>5,'idRoom'=>'9120','timeStart'=>'07:00:00','timeEnd'=>'10:00:00','durasi'=>3,'prioritas'=>2]
-        );
-        DB::table('jadwals')->insert(
-            ['id'=>55,'idMk'=>39,'type'=>0,'hari'=>5,'idRoom'=>'9121','timeStart'=>'07:00:00','timeEnd'=>'09:00:00','durasi'=>2,'prioritas'=>2]
-        );
-        DB::table('jadwals')->insert(
-            ['id'=>56,'idMk'=>39,'type'=>0,'hari'=>5,'idRoom'=>'9121','timeStart'=>'09:00:00','timeEnd'=>'11:00:00','durasi'=>2,'prioritas'=>2]
-        );
-        DB::table('jadwals')->insert(
-            ['id'=>57,'idMk'=>31,'type'=>0,'hari'=>5,'idRoom'=>'9122','timeStart'=>'07:00:00','timeEnd'=>'10:00:00','durasi'=>3,'prioritas'=>2]
-        );
-        DB::table('jadwals')->insert(
-            ['id'=>58,'idMk'=>32,'type'=>0,'hari'=>5,'idRoom'=>'10307','timeStart'=>'07:00:00','timeEnd'=>'09:00:00','durasi'=>2,'prioritas'=>1]
-        );
-        DB::table('jadwals')->insert(
-            ['id'=>59,'idMk'=>30,'type'=>0,'hari'=>5,'idRoom'=>'SB-915','timeStart'=>'07:00:00','timeEnd'=>'09:00:00','durasi'=>2,'prioritas'=>2]
-        );
-        DB::table('jadwals')->insert(
-            ['id'=>60,'idMk'=>30,'type'=>0,'hari'=>5,'idRoom'=>'SB-915','timeStart'=>'09:00:00','timeEnd'=>'11:00:00','durasi'=>2,'prioritas'=>2]
-        );
-        DB::table('jadwals')->insert(
-            ['id'=>61,'idMk'=>4,'type'=>1,'hari'=>5,'idRoom'=>'SB-916','timeStart'=>'07:00:00','timeEnd'=>'09:00:00','durasi'=>2,'prioritas'=>1]
-        );
-        DB::table('jadwals')->insert(
-            ['id'=>62,'idMk'=>14,'type'=>1,'hari'=>5,'idRoom'=>'SB-916','timeStart'=>'09:00:00','timeEnd'=>'11:00:00','durasi'=>2,'prioritas'=>1]
-        );
-        DB::table('jadwals')->insert(
-            ['id'=>63,'idMk'=>34,'type'=>1,'hari'=>5,'idRoom'=>'SB-916','timeStart'=>'13:00:00','timeEnd'=>'15:00:00','durasi'=>2,'prioritas'=>1]
-        );
-        DB::table('jadwals')->insert(
-            ['id'=>64,'idMk'=>14,'type'=>1,'hari'=>5,'idRoom'=>'SB-917','timeStart'=>'09:00:00','timeEnd'=>'11:00:00','durasi'=>2,'prioritas'=>1]
-        );
-        DB::table('jadwals')->insert(
-            ['id'=>65,'idMk'=>15,'type'=>1,'hari'=>5,'idRoom'=>'SB-917','timeStart'=>'13:00:00','timeEnd'=>'15:00:00','durasi'=>2,'prioritas'=>1]
-        );
-        DB::table('jadwals')->insert(
-            ['id'=>66,'idMk'=>38,'type'=>1,'hari'=>5,'idRoom'=>'SB-917','timeStart'=>'15:00:00','timeEnd'=>'17:00:00','durasi'=>2,'prioritas'=>1]
-        );
-        DB::table('jadwals')->insert(
-            ['id'=>67,'idMk'=>14,'type'=>1,'hari'=>5,'idRoom'=>'SB-918','timeStart'=>'09:00:00','timeEnd'=>'11:00:00','durasi'=>2,'prioritas'=>1]
-        );
-        DB::table('jadwals')->insert(
-            ['id'=>68,'idMk'=>15,'type'=>1,'hari'=>5,'idRoom'=>'SB-918','timeStart'=>'13:00:00','timeEnd'=>'15:00:00','durasi'=>2,'prioritas'=>1]
-        );
-        DB::table('jadwals')->insert(
-            ['id'=>69,'idMk'=>38,'type'=>1,'hari'=>5,'idRoom'=>'SB-918','timeStart'=>'15:00:00','timeEnd'=>'17:00:00','durasi'=>2,'prioritas'=>1]
-        );
-        DB::table('jadwals')->insert(
-            ['id'=>70,'idMk'=>33,'type'=>0,'hari'=>5,'idRoom'=>'10314','timeStart'=>'13:00:00','timeEnd'=>'16:00:00','durasi'=>3,'prioritas'=>2]
-        );
 
+            ['id'=>54,'idMk'=>8+22,'type'=>0,'hari'=>5,'idRoom'=>'9120','timeStart'=>'07:00:00','timeEnd'=>'10:00:00','durasi'=>3,'prioritas'=>2]
+        );
+        DB::table('jadwals')->insert(
+            ['id'=>55,'idMk'=>8+39,'type'=>0,'hari'=>5,'idRoom'=>'9121','timeStart'=>'07:00:00','timeEnd'=>'09:00:00','durasi'=>2,'prioritas'=>2]
+        );
+        DB::table('jadwals')->insert(
+            ['id'=>56,'idMk'=>8+39,'type'=>0,'hari'=>5,'idRoom'=>'9121','timeStart'=>'09:00:00','timeEnd'=>'11:00:00','durasi'=>2,'prioritas'=>2]
+        );
+        DB::table('jadwals')->insert(
+            ['id'=>57,'idMk'=>8+31,'type'=>0,'hari'=>5,'idRoom'=>'9122','timeStart'=>'07:00:00','timeEnd'=>'10:00:00','durasi'=>3,'prioritas'=>2]
+        );
+        DB::table('jadwals')->insert(
+            ['id'=>58,'idMk'=>8+32,'type'=>0,'hari'=>5,'idRoom'=>'10307','timeStart'=>'07:00:00','timeEnd'=>'09:00:00','durasi'=>2,'prioritas'=>1]
+        );
+        DB::table('jadwals')->insert(
+            ['id'=>59,'idMk'=>8+30,'type'=>0,'hari'=>5,'idRoom'=>'SB-915','timeStart'=>'07:00:00','timeEnd'=>'09:00:00','durasi'=>2,'prioritas'=>2]
+        );
+        DB::table('jadwals')->insert(
+            ['id'=>60,'idMk'=>8+30,'type'=>0,'hari'=>5,'idRoom'=>'SB-915','timeStart'=>'09:00:00','timeEnd'=>'11:00:00','durasi'=>2,'prioritas'=>2]
+        );
+        DB::table('jadwals')->insert(
+            ['id'=>61,'idMk'=>8+4,'type'=>1,'hari'=>5,'idRoom'=>'SB-916','timeStart'=>'07:00:00','timeEnd'=>'09:00:00','durasi'=>2,'prioritas'=>1]
+        );
+        DB::table('jadwals')->insert(
+            ['id'=>62,'idMk'=>8+14,'type'=>1,'hari'=>5,'idRoom'=>'SB-916','timeStart'=>'09:00:00','timeEnd'=>'11:00:00','durasi'=>2,'prioritas'=>1]
+        );
+        DB::table('jadwals')->insert(
+            ['id'=>63,'idMk'=>8+34,'type'=>1,'hari'=>5,'idRoom'=>'SB-916','timeStart'=>'13:00:00','timeEnd'=>'15:00:00','durasi'=>2,'prioritas'=>1]
+        );
+        DB::table('jadwals')->insert(
+            ['id'=>64,'idMk'=>8+14,'type'=>1,'hari'=>5,'idRoom'=>'SB-917','timeStart'=>'09:00:00','timeEnd'=>'11:00:00','durasi'=>2,'prioritas'=>1]
+        );
+        DB::table('jadwals')->insert(
+            ['id'=>65,'idMk'=>8+15,'type'=>1,'hari'=>5,'idRoom'=>'SB-917','timeStart'=>'13:00:00','timeEnd'=>'15:00:00','durasi'=>2,'prioritas'=>1]
+        );
+        DB::table('jadwals')->insert(
+            ['id'=>66,'idMk'=>8+38,'type'=>1,'hari'=>5,'idRoom'=>'SB-917','timeStart'=>'15:00:00','timeEnd'=>'17:00:00','durasi'=>2,'prioritas'=>1]
+        );
+        DB::table('jadwals')->insert(
+            ['id'=>67,'idMk'=>8+14,'type'=>1,'hari'=>5,'idRoom'=>'SB-918','timeStart'=>'09:00:00','timeEnd'=>'11:00:00','durasi'=>2,'prioritas'=>1]
+        );
+        DB::table('jadwals')->insert(
+            ['id'=>68,'idMk'=>8+15,'type'=>1,'hari'=>5,'idRoom'=>'SB-918','timeStart'=>'13:00:00','timeEnd'=>'15:00:00','durasi'=>2,'prioritas'=>1]
+        );
+        DB::table('jadwals')->insert(
+            ['id'=>69,'idMk'=>8+38,'type'=>1,'hari'=>5,'idRoom'=>'SB-918','timeStart'=>'15:00:00','timeEnd'=>'17:00:00','durasi'=>2,'prioritas'=>1]
+        );
+        DB::table('jadwals')->insert(
+            ['id'=>70,'idMk'=>8+33,'type'=>0,'hari'=>5,'idRoom'=>'10314','timeStart'=>'13:00:00','timeEnd'=>'16:00:00','durasi'=>3,'prioritas'=>2]
+
+        );
         //mengajar
         DB::table('mengajar')->insert(
             ['idJadwal'=>10,'idUser'=>1]
@@ -629,8 +620,6 @@ class Seeder extends Migration
             ['idJadwal'=>13,'idUser'=>1]
         );
     }
-
-
     /**
      * Reverse the migrations.
      *

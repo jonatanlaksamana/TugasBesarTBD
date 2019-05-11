@@ -12,7 +12,7 @@
     <div class="card-header" id="headingOne" style="background-image: url(../../../images/head4.jpg);">
       <h5 class="mb-0">
 
-        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne" style="color:white;font-weight:600;">
           {{$parent->name}}
         </button>
       </h5>
@@ -26,15 +26,16 @@
                     <table class="table table-bordered" style="border-radius:20px;" >
                         <thead>
                         <tr>
-                            <th scope="col" style="background-image: linear-gradient(to left, rgb(100, 107, 152,0.99), rgba(110, 143, 102, 0.79))">Matakuliah</th>
-                            <th scope="col" style="background-image: linear-gradient(to left, rgb(118, 127, 52,0.99), rgba(255, 243, 82, 0.99))">Pilih</th>
+                            <th scope="col" style="color:white;font-weight:400;background-image:  linear-gradient(to left, rgb(100, 107, 152,0.99), rgba(110, 143, 102, 0.79))">Matakuliah</th>
+                            <th scope="col" style="color:white;font-weight:400;background-image: linear-gradient(to right, rgb(100, 107, 152,0.99), rgba(110, 143, 102, 0.79))">Pilih</th>
                         </tr>
                         </thead>
-                        <tbody>
-                        @foreach($parent->children as $child) 
+                        <tbody style="color:black;font-weight:390;">
+                        @foreach($parent->children as $child)
+
                         <tr>
                            
-                            <td>{{$child->name}}</td>
+                            <td >{{$child->name}}</td>
                             <td>
                               <input type="checkbox" name="test" id="">
                             </td> 
@@ -50,7 +51,12 @@
     </div>
      
     @endforeach
-  </div>   
-</body>        
+  </div>
+  <div style="background-image:url(../../../images/head8.png);">
+    <button type="button" class="btn btn-primary btn-lg btn-block" style="margin-bottom:13px;margin-top:13px;width:38%;margin-left:50%;border-radius:30px;float:left">Konfirmasi Pilihan Mata Kuliah</button>  
+    <button type="button" class="btn btn-secondary btn-lg btn-block" style="margin-bottom:13px;margin-top:-4.1%;width:38%;margin-left:8%;border-radius:30px;;float:left">Pilih Ulang Mata Kuliah</button>   
+  </div>
+</body>   
+
 @endsection
 
