@@ -41,12 +41,12 @@
         <div class="flip-card-inner" style="border-radius:20px">
           <div class="flip-card-front" style="border-radius:20px">
           <img src="{{asset('/images/crumpledpaper.jpg')}}" style="width:200px;height:200px; position:relative;border-radius:20px"  >
-                <p>Ganti Jadwal</p>
+                <p>Jadwal Saya</p>
           </div>
           <div class="flip-card-back" style="border-radius:20px">
-            
-            <p>Mengganti jadwal untuk kelas pengganti.</p>
-            
+            <a href="{{url('mySchedule')}}">
+            <p>Melihat atau Mengganti jadwal untuk kelas pengganti.</p>
+            </a>
           </div>
         </div>
       </div>

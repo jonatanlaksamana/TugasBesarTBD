@@ -1,5 +1,4 @@
 <?php
-
 use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
@@ -22,15 +21,14 @@ class AllTable extends Migration
         )');
         
         DB::statement('create table Ruangan (
-
             idRoom varchar(50) primary key ,
             kapasitas int
-
         )');
         DB::statement('create table MataKuliah (
             id int primary key  AUTO_INCREMENT,
             name varchar(50),
             semester int,
+            sks int,
             singkatan varchar(50)
         )');
         DB::statement('create table Jadwals (
@@ -41,7 +39,9 @@ class AllTable extends Migration
             idRoom varchar(50),
             timeStart time,
             timeEnd time,
-            kelas varchar(1)
+            kelas varchar(1),
+            durasi int,
+            prioritas int
         )');
         DB::statement('create table Mengajar(
             idJadwal int,
@@ -52,9 +52,7 @@ class AllTable extends Migration
             nama varchar(50),
             semesterMhs int
         )');
-
     }
-
     /**
      * Reverse the migrations.
      *
