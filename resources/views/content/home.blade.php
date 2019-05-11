@@ -3,7 +3,7 @@
 <html>
 
 
-<body background="{{asset('/images/wall3.png')}}" style="width:98.67%;">
+<body background="{{asset('/images/wall0.png')}}" style="width:98.67%;">
 
 <div class="flip-card" style="border-radius:20px">
   <div class="flip-card-inner" style="border-radius:20px">
