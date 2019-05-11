@@ -5,7 +5,7 @@ namespace App;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Facades\DB;
 
-class JadwalModel extends Model
+class myScheduleModel extends Model
 {
     //
     protected $table = 'jadwals';
