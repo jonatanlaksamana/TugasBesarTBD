@@ -87,6 +87,7 @@ class Seeder extends Migration
         DB::table('matakuliah')->insert(
             [  'name' =>'Semester8','semester'=>null]
         );
+
         // DB::table('matakuliah')->insert(
         //     [  'name' =>'Topik Khusus Sistem Informasi 1','semester'=>6,'sks'=>3]
         // );
@@ -331,6 +332,7 @@ class Seeder extends Migration
         DB::table('ruangan')->insert(
             ['idRoom' =>'10314' ,'kapasitas'=>0]
         );
+
         //senin
         DB::table('jadwals')->insert(
             ['id'=>1,'idMk'=>8+5,'type'=>0,'hari'=>1,'idRoom'=>'9120','timeStart'=>'07:00:00','timeEnd'=>'10:00:00','durasi'=>2,'prioritas'=>2]
@@ -397,6 +399,9 @@ class Seeder extends Migration
         );
         DB::table('jadwals')->insert(
             ['id'=>22,'idMk'=>8+37,'type'=>0,'hari'=>1,'idRoom'=>'SB-918','timeStart'=>'10:00:00','timeEnd'=>'13:00:00','durasi'=>3,'prioritas'=>2]
+
+
+        
         );
         //selasa
         DB::table('jadwals')->insert(
@@ -499,6 +504,7 @@ class Seeder extends Migration
             );
             DB::table('jadwals')->insert(
                 ['id'=>86,'idMk'=>8+37,'type'=>1,'hari'=>3,'idRoom'=>'SB-917','timeStart'=>'15:00:00','timeEnd'=>'17:00:00','durasi'=>2,'prioritas'=>1]
+
             );
         //kamis
         DB::table('jadwals')->insert(

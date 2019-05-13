@@ -30,6 +30,7 @@ class AllTable extends Migration
             semester int,
             sks int,
             singkatan varchar(50)
+
         )');
         DB::statement('create table Jadwals (
             id int primary key  AUTO_INCREMENT,
