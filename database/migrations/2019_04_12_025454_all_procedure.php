@@ -14,6 +14,60 @@ class AllProcedure extends Migration
     public function up()
     {
         //
+        DB::unprepared("DROP procedure make_all_schedule");
+        DB::unprepared('
+        CREATE  PROCEDURE make_all_schedule()
+        BEGIN
+        DECLARE user_name,matakuliah_name,idRoom_,kelas_,idRoomResult_ varchar(255);
+        DECLARE idUser_,idJadwal_  , hari_ , waktuSelesaiResult_   int  ;
+        DECLARE startTime , endTime time;
+        DECLARE isLoop boolean default false;
+        
+         DECLARE activity_all_cursor CURSOR FOR
+            select idUser,users.nama,matakuliah.name,jadwals.timeStart,jadwals.timeEnd,jadwals.kelas,jadwals.hari,jadwals.idRoom,jadwals.id from 
+                tempmengajar join users on tempmengajar.idUser = users.id
+                             join jadwals on tempmengajar.idjadwal = jadwals.id
+                             join matakuliah on jadwals.idMk = matakuliah.id
+                             
+                 order by timeEnd,hari;
+                             
+            DECLARE CONTINUE HANDLER FOR NOT FOUND set isLoop = true; 
+            OPEN activity_all_cursor;
+            CREATE TEMPORARY TABLE result_all_table(
+                        id int PRIMARY KEY AUTO_INCREMENT,
+                        idUser int,
+                        namaDosen varchar(255) DEFAULT \'dummy\'  ,
+                        namaMK varchar(255) DEFAULT \'dummy\' ,
+                        waktuMulai time DEFAULT \'00:00:00\',
+                        waktuSelesai time DEFAULT \'00:00:00\',
+                        kelas varchar(50) DEFAULT 0,
+                        hari int DEFAULT 1,
+                        idRoom varchar(255) default \'1\' ,
+                        idJadwal int default 0
+                      );
+             insert into result_all_table (idUser) values (0);     
+             
+              activity_loop : LOOP
+              FETCH FROM activity_all_cursor INTO idUser_,user_name,matakuliah_name,startTime,endTime,kelas_,hari_,idRoom_,idJadwal_;
+                if isLoop THEN
+                   LEAVE activity_loop;
+                END IF;
+                
+             select waktuSelesai into waktuSelesaiResult_ from result_all_table ORDER BY id DESC LIMIT 1;
+             select idRoom  into  idRoomResult_ from result_all_table ORDER BY id DESC LIMIT 1;
+             
+             if startTime >= waktuSelesaiResult_ or idRoom_ != idRoomResult_ then
+                    insert into result_all_table (idUser,namaDosen,namaMK,waktuMulai,waktuSelesai,kelas,hari,idRoom,idJadwal)   values (idUser_,user_name,matakuliah_name,startTime,endTime,kelas_,hari_,idRoom_,idJadwal);  
+             end if;
+             
+             END LOOP activity_loop;
+            
+            CLOSE activity_all_cursor;
+          
+          select * from result_all_table;
+        END
+        ');
+
         DB::unprepared("DROP procedure IF EXISTS insertTempMatkul");
         DB::unprepared('
         CREATE  PROCEDURE insertTempMatkul( id INT)
