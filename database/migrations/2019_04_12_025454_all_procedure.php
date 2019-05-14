@@ -23,6 +23,15 @@ class AllProcedure extends Migration
         END
         ');
 
+        DB::unprepared("DROP procedure IF EXISTS call_bentrok");
+        DB::unprepared('
+        CREATE  PROCEDURE call_bentrok( id INT)
+        BEGIN
+        call find_bentrok();
+        select * from bentrok_table ;  
+        END
+        ');
+
         // 
         DB::unprepared("DROP procedure IF EXISTS makeschedule");
         DB::unprepared('
@@ -153,6 +162,7 @@ class AllProcedure extends Migration
         DB::unprepared("DROP procedure IF EXISTS insertTempMatkul");
         DB::unprepared("DROP procedure IF EXISTS makeschedule");
         DB::unprepared("DROP procedure IF EXISTS Find_Bentrok");
+        DB::unprepared("DROP procedure IF EXISTS call_bentrok");
 
     }
 }
