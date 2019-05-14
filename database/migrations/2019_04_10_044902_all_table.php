@@ -54,6 +54,7 @@ class AllTable extends Migration
             semesterMhs int
         )');
 
+
         DB::statement('create table tempMatKul(
             idMk int ,
             name varchar(50),
@@ -65,6 +66,7 @@ class AllTable extends Migration
             hari int,
             semester int
         )');
+
     }
     /**
      * Reverse the migrations.

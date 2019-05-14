@@ -25,6 +25,7 @@
 <div class="flip-card" style="border-radius:20px">
   <div class="flip-card-inner" style="border-radius:20px">
     <div class="flip-card-front" style="border-radius:20px">
+
       <img src="{{asset('/images/crumpledpaper1.jpg')}}" style="width:300px;height:400px; position:relative;border-radius:20px"  >
     </div>
 
@@ -39,11 +40,12 @@
 </div> 
 
 
+
       <div class="flip-card">
         <div class="flip-card-inner" style="border-radius:20px">
           <div class="flip-card-front" style="border-radius:20px">
           <img src="{{asset('/images/crumpledpaper3 .jpg')}}" style="width:300px;height:400px; position:relative;border-radius:20px"  >
-              
+
           </div>
           <div class="flip-card-back" style="border-radius:20px">
             <p>Melihat atau Mengganti jadwal untuk kelas pengganti.</p>
