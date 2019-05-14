@@ -8,7 +8,6 @@ class myScheduleController extends Controller
 {
     //
     public function index($id){
-        
         $allJadwal = JadwalModel::getAll9120($id);
         $allJadwal2 = JadwalModel::getAll9121($id);
         $allJadwal3 = JadwalModel::getAll9122($id);
@@ -23,7 +22,7 @@ class myScheduleController extends Controller
         $allJadwal12 = JadwalModel::getAllSB917($id);
         $allJadwal13 = JadwalModel::getAllSB918($id);
 
-        return view('content.jadwal' , compact('allJadwal','allJadwal2','allJadwal3','allJadwal4','allJadwal5'
+        return view('content.mySchedule' , compact('allJadwal','allJadwal2','allJadwal3','allJadwal4','allJadwal5'
         ,'allJadwal6','allJadwal7','allJadwal8','allJadwal9','allJadwal10','allJadwal11','allJadwal12','allJadwal13'));
     }
   

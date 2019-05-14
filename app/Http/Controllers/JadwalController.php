@@ -8,7 +8,6 @@ class JadwalController extends Controller
 {
     //
     public function index($id){
-        
         $allJadwal = JadwalModel::getAll9120($id);
         $allJadwal2 = JadwalModel::getAll9121($id);
         $allJadwal3 = JadwalModel::getAll9122($id);
