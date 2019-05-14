@@ -3,12 +3,12 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 use App\JadwalModel;
 class JadwalController extends Controller
 {
     //
     public function index($id){
-        
         $allJadwal = JadwalModel::getAll9120($id);
         $allJadwal2 = JadwalModel::getAll9121($id);
         $allJadwal3 = JadwalModel::getAll9122($id);
@@ -25,6 +25,14 @@ class JadwalController extends Controller
 
         return view('content.jadwal' , compact('allJadwal','allJadwal2','allJadwal3','allJadwal4','allJadwal5'
         ,'allJadwal6','allJadwal7','allJadwal8','allJadwal9','allJadwal10','allJadwal11','allJadwal12','allJadwal13'));
+    }
+
+    public function pilihJadwal(){
+        $arrCheck= \request('id');
+        foreach($arrCheck as  $id){
+            DB::statement("CALL insertTempMatkul($id)" );
+        }
+        return "check db boss";
     }
   
 }
