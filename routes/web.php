@@ -16,10 +16,11 @@ Route::get('/jadwals/{id}' , 'JadwalController@index')->name('jadwal.senin');
 Route::get('/jadwals/{id}' , 'JadwalController@index')->name('jadwal.selasa');
 
 Route::get('/' , 'HomeController@index')->name('home.menu');
+Route::get('/login','LoginController@index')->name('login');
 Route::post('/login','LoginController@login')->name('signIn');
 Route::get('/pilihjadwal','PilihJadwalController@index')->name('pilihJadwal.choose');
 Route::get('/scheduleSaya','MyScheduleController@index')->name('schedule.choose');
 Route::post('/test' , 'JadwalController@pilihJadwal')->name('pilih.jadwal');
 
 Route::get('/konfirmasiPilihan','PilihJadwalController@konfirmasi')->name('schedule.choose');
-
+Route::post('/halojanto' , 'PilihJadwalController@isiJadwal' )->name('isi.Jadwal');

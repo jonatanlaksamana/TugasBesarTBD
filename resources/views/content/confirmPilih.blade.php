@@ -21,8 +21,27 @@
           <th scope="row">{{$jadwalBentrok[$i]->id}}</th>
           <td>{{$jadwalBentrok[$i]->name}}</td>
           <td>{{$jadwalBentrok[$i]->kelas}}</td>
-          <td>{{$jadwalBentrok[$i]->tipe}}</td>
-          <td>{{$jadwalBentrok[$i]->hari}}</td>
+          <td>
+            @if($jadwalBentrok[$i]->tipe == 0)
+              Kelas
+            @elseif($jadwalBentrok[$i]->tipe == 1)
+              Praktikum
+            @endif
+          </td>
+          <td>
+            @if($jadwalBentrok[$i]->hari == 1)
+                Senin
+            @elseif($jadwalBentrok[$i]->hari == 2)
+                Selasa
+            @elseif($jadwalBentrok[$i]->hari == 3)
+                Rabu
+            @elseif($jadwalBentrok[$i]->hari == 4)
+                Kamis
+            @elseif($jadwalBentrok[$i]->hari == 5)
+                Jumat
+            @endif
+            {{-- {{$jadwalBentrok[$i]->hari}} --}}
+          </td>
           <td>{{$jadwalBentrok[$i]->waktuMulai}}</td>
           <td>{{$jadwalBentrok[$i]->waktuSelesai}}</td>
         </tr>
@@ -51,8 +70,23 @@
                 <th scope="row">{{$jadwalTidakBentrok[$i]->id}}</th>
                 <td>{{$jadwalTidakBentrok[$i]->name}}</td>
                 <td>{{$jadwalTidakBentrok[$i]->kelas}}</td>
-                <td>{{$jadwalTidakBentrok[$i]->tipe}}</td>
-                <td>{{$jadwalTidakBentrok[$i]->hari}}</td>
+                <td>@if($jadwalTidakBentrok[$i]->tipe == 0)
+                    Kelas
+                  @elseif($jadwalTidakBentrok[$i]->tipe == 1)
+                    Praktikum
+                  @endif</td>
+                <td> @if($jadwalTidakBentrok[$i]->hari == 1)
+                    Senin
+                @elseif($jadwalTidakBentrok[$i]->hari == 2)
+                    Selasa
+                @elseif($jadwalTidakBentrok[$i]->hari == 3)
+                    Rabu
+                @elseif($jadwalTidakBentrok[$i]->hari == 4)
+                    Kamis
+                @elseif($jadwalTidakBentrok[$i]->hari == 5)
+                    Jumat
+                @endif
+                {{-- {{$jadwalBentrok[$i]->hari}} --}}</td>
                 <td>{{$jadwalTidakBentrok[$i]->waktuMulai}}</td>
                 <td>{{$jadwalTidakBentrok[$i]->waktuSelesai}}</td>
               </tr>
@@ -61,8 +95,11 @@
               @endfor
             </tbody>
       </table>
-
-      <a href="#" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Konfirmasi Jadwal</a>
+    <form action="{{route('isi.Jadwal')}}" method="POST">
+      @csrf
+          <input type="submit" class="btn btn-primary btn-lg active"  aria-pressed="true" value="oke!!">
+      </form>
+      
       <a href="#" class="btn btn-secondary btn-lg active" role="button" aria-pressed="true">Pilih Ulang Mata Kuliah</a>
 </body>
 </html>
