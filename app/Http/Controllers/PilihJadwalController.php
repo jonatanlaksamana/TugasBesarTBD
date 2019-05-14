@@ -5,17 +5,25 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Cache;
-use App\JadwalModel;
+use App\UserModel;
 use App\Matakuliah;
 class PilihJadwalController extends Controller
 {
     //
     public function index(){
         $janto = Cache::get('auth');
+        $userLogin = UserModel::getUserLogin($janto[0]->id);
+        $janto = $userLogin;
 
-        $matkul = Matakuliah::whereNull('semester')->with('children')->get();
+        if($userLogin[0]->isFill == 0){
+            $matkul = Matakuliah::whereNull('semester')->with('children')->get();
+            return view('content.pilihjadwal' , compact('matkul','janto'));
+        }
+        else{
+            return view('content.home' , compact('janto'))->with(['error' => 'anda telah mengisi']);
+        }
 
-        return view('content.pilihjadwal' , compact('matkul','janto'));
+
     }
 
     public function konfirmasi(){
@@ -29,6 +37,9 @@ class PilihJadwalController extends Controller
     public function isiJadwal(){
         $janto = Cache::get('auth');
         $idUser = $janto[0]->id;
+        UserModel::toggleIsFill($idUser);
+
+
         $arrJadwal=  DB::select("CALL call_schedule()");
         foreach($arrJadwal as  $jadwal){
             DB::statement("CALL isiTempMengajar($jadwal->id,$idUser)" );

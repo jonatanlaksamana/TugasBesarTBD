@@ -167,7 +167,7 @@ class AllProcedure extends Migration
             select * from result_all_table where idUser = id;
         END
         ');
-        DB::unprepared("DROP procedure IF EXISTS call_all_bentrok_schedule");
+        DB::unprepared("DROP procedure IF EXISTS all_all_bentrok_schedule");
         DB::unprepared('
         CREATE  PROCEDURE all_all_bentrok_schedule()
         BEGIN
@@ -324,12 +324,16 @@ END
     public function down()
     {
 
-        DB::unprepared("DROP procedure IF EXISTS insertTempMatkul");
-        DB::unprepared("DROP procedure IF EXISTS makeschedule");
-        DB::unprepared("DROP procedure IF EXISTS Find_Bentrok");
-        DB::unprepared("DROP procedure IF EXISTS call_bentrok");
-        DB::unprepared("DROP procedure  IF EXISTS make_all_schedule");
-        DB::unprepared("DROP procedure IF EXISTS  isiTempMengajar");
+        DB::unprepared("DROP procedure IF EXISTS   insertTempMatkul");
+        DB::unprepared("DROP procedure IF EXISTS   makeschedule");
+        DB::unprepared("DROP procedure IF EXISTS   Find_Bentrok");
+        DB::unprepared("DROP procedure IF EXISTS   call_bentrok");
+        DB::unprepared("DROP procedure IF EXISTS   make_all_schedule");
+        DB::unprepared("DROP procedure IF EXISTS   isiTempMengajar");
+        DB::unprepared("DROP procedure IF EXISTS   all_all_bentrok_schedule");
+        DB::unprepared("DROP procedure IF EXISTS   call_all_schedule");
+        DB::unprepared("DROP procedure IF EXISTS   call_schedule");
+        DB::unprepared("DROP procedure IF EXISTS   make_all_bentrok_schedule");
 
     }
 }

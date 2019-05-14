@@ -12,6 +12,7 @@
 
 
     @include('content/header')
+
     @yield('content')
 </body>
 </html>

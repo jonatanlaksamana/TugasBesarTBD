@@ -17,7 +17,8 @@ class AllTable extends Migration
             id int primary key  AUTO_INCREMENT,
             nama varchar(50),
             username varchar(20),
-            password varchar(20)
+            password varchar(20),
+            isFill int default  0
         )');
         
         DB::statement('create table Ruangan (

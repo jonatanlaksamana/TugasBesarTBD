@@ -1,7 +1,7 @@
 @extends('layout.homeLayout')
 @section('content')
 
-
+  @include('etc.FlashMessage')
 <body background="{{asset('/images/wall0.png')}}" style="width:98.67%;">
 <div class="container">
   <div class="row">
