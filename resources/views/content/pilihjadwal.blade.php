@@ -65,7 +65,7 @@
      
     </div>
      
-    @endforeach
+    
   </div>
   <div style="background-image:url(../../../images/head8.png);">
     {{-- <button type="button" class="btn btn-primary btn-lg btn-block" style="margin-bottom:13px;margin-top:13px;width:38%;margin-left:50%;border-radius:30px;float:left">Konfirmasi Pilihan Mata Kuliah</button>   --}}

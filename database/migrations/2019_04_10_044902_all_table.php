@@ -44,10 +44,12 @@ class AllTable extends Migration
             durasi int,
             prioritas int
         )');
+
         DB::statement('create table Mengajar(
             idJadwal int,
             idUser int
         )');
+
         DB::statement('create table Mahasiswa(
             npm int primary key,
             nama varchar(50),
@@ -56,6 +58,7 @@ class AllTable extends Migration
 
 
         DB::statement('create table tempMatKul(
+            id int ,
             idMk int ,
             name varchar(50),
             timeStart time,
@@ -65,6 +68,10 @@ class AllTable extends Migration
             type int,
             hari int,
             semester int
+        )');
+        DB::statement('create table tempMengajar(
+            idJadwal int ,
+            idUser int
         )');
 
     }
