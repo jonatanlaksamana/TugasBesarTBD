@@ -42,7 +42,7 @@ class PilihJadwalController extends Controller
 
         $arrJadwal=  DB::select("CALL call_schedule()");
         foreach($arrJadwal as  $jadwal){
-            DB::statement("CALL isiTempMengajar($jadwal->id,$idUser)" );
+            DB::statement("CALL isiTempMengajar($jadwal->idJadwal,$idUser)" );
         }
         return redirect()->route('home.menu');
     }

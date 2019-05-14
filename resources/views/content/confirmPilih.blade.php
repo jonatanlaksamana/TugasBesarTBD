@@ -65,6 +65,7 @@
           </tr>
         </thead>
         <tbody>
+
             @for ($i = 0; $i < sizeof($jadwalTidakBentrok); $i++)
             <tr>
                 <th scope="row">{{$jadwalTidakBentrok[$i]->id}}</th>
