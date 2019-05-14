@@ -47,7 +47,8 @@
         <li style="margin-top:-15px;"><span >17:00</span></li>
       </ul>
     </div> <!-- .cd-schedule__timeline -->
-	
+
+
     <div class="cd-schedule__events" >
       <ul style="height:1050px">
 
@@ -55,6 +56,7 @@
           <div class="cd-schedule__top-info"><span>9120</span></div>
 		
           <ul>
+
             @foreach($allJadwal as $jadwal)
               <li class="cd-schedule__event">
                 <a data-start="{{$jadwal->timeStart}}" data-end="{{$jadwal->timeEnd}}" data-content="event-abs-circuit" data-event="event-1" href="#0">

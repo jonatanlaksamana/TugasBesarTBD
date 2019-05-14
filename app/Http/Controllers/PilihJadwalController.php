@@ -11,16 +11,19 @@ class PilihJadwalController extends Controller
 {
     //
     public function index(){
+        $janto = Cache::get('auth');
+
         $matkul = Matakuliah::whereNull('semester')->with('children')->get();
 
-        return view('content.pilihjadwal' , compact('matkul'));
+        return view('content.pilihjadwal' , compact('matkul','janto'));
     }
 
     public function konfirmasi(){
 
+        $janto = Cache::get('auth');
      $jadwalBentrok =   DB::select("CALL call_bentrok()");
      $jadwalTidakBentrok = DB::select("CALL call_schedule()");
-         return view('content.confirmPilih' , compact('jadwalBentrok','jadwalTidakBentrok'));
+     return view('content.confirmPilih' , compact('jadwalBentrok','jadwalTidakBentrok','janto'));
     }
 
     public function isiJadwal(){
@@ -30,7 +33,7 @@ class PilihJadwalController extends Controller
         foreach($arrJadwal as  $jadwal){
             DB::statement("CALL isiTempMengajar($jadwal->id,$idUser)" );
         }
-        return "check db bos";
+        return redirect()->route('home.menu');
     }
 }
 

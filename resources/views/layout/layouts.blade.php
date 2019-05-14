@@ -16,7 +16,7 @@
     
 </head>
 <body>
-    @include('content/header3')
+    @include('content/header')
     @yield('content')
 
     <script src="{{asset('js/util.js')}}"></script>

@@ -5,10 +5,12 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 use App\JadwalModel;
+use Illuminate\Support\Facades\Cache;
 class JadwalController extends Controller
 {
     //
     public function index($id){
+        $janto =   Cache::get('auth');
         $allJadwal = JadwalModel::getAll9120($id);
         $allJadwal2 = JadwalModel::getAll9121($id);
         $allJadwal3 = JadwalModel::getAll9122($id);
@@ -24,7 +26,7 @@ class JadwalController extends Controller
         $allJadwal13 = JadwalModel::getAllSB918($id);
 
         return view('content.jadwal' , compact('allJadwal','allJadwal2','allJadwal3','allJadwal4','allJadwal5'
-        ,'allJadwal6','allJadwal7','allJadwal8','allJadwal9','allJadwal10','allJadwal11','allJadwal12','allJadwal13'));
+        ,'allJadwal6','allJadwal7','allJadwal8','allJadwal9','allJadwal10','allJadwal11','allJadwal12','allJadwal13','janto'));
     }
 
     public function pilihJadwal(){
@@ -32,7 +34,20 @@ class JadwalController extends Controller
         foreach($arrCheck as  $id){
             DB::statement("CALL insertTempMatkul($id)" );
         }
-        return "check db boss";
+        return redirect()->route('schedule.choose');
+    }
+
+    public function jadwalNotif(){
+        $janto = Cache::get('auth');
+        $jadwalBentrok =   DB::select("CALL `all_all_bentrok_schedule`()");
+        return view('content.notifSchedule' , compact('jadwalBentrok','janto'));
+    }
+
+    public function jadwalSaya($id){
+        $janto = Cache::get('auth');
+        $mySchedule = DB::select("call call_all_schedule($id)");
+        return view('content.JadwalSaya',compact('mySchedule' , 'janto'));
+
     }
   
 }

@@ -5,7 +5,6 @@ use Illuminate\Support\Facades\Cache;
 use Illuminate\Http\Request;
 use App\JadwalModel;
 use Illuminate\Support\Facades\DB;
-
 use App\LoginModel;
 
 class LoginController extends Controller
@@ -29,6 +28,13 @@ class LoginController extends Controller
             return "ga ada";
 
         }
+    }
+
+    public function logout(){
+        Cache::flush();
+        DB::statement('truncate table tempmatkul');
+        return redirect()->route('login');
+
     }
 
 }
