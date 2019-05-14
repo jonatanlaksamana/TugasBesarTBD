@@ -24,10 +24,10 @@
 
   <div class="cd-schedule cd-schedule--loading margin-top--lg margin-bottom--lg js-cd-schedule">
     <div class="cd-schedule__timeline" style="font-weight:bold;color:whitesmoke">
-	      <li><span>07:00</span></li>
-	    	<li><span>07:30</span></li>
+        <li><span>07:00</span></li>
+        <li><span>07:30</span></li>
         <li><span>08:00</span></li>
-		    <li><span>08:30</span></li>
+        <li><span>08:30</span></li>
         <li><span>09:00</span></li>
         <li><span>09:30</span></li>
         <li><span>10:00</span></li>

@@ -38,10 +38,13 @@
     <a href="{{url('jadwals/1')}}">
     <img src="{{asset('/images/scheduleStample.png')}}" style="width:200px;height:200px; position:relative;border-radius:150px"  >
     </a>
+
+
     </div>
     
   </div>
-</div>
+</a>
+
 
 <div class="flip-card" >
         <div class="flip-card-inner" style="border-radius:20px">
