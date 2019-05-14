@@ -11,7 +11,6 @@ class indexcontroller extends Controller
     //
     public function index(){
 //        use select to return array
-        $allUsers =  UserModel::getAllUsers();
         return view('content.jadwal');
     }
 }

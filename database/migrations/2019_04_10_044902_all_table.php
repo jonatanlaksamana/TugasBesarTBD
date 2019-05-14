@@ -52,6 +52,18 @@ class AllTable extends Migration
             nama varchar(50),
             semesterMhs int
         )');
+
+        DB::statement('create table tempMatKul(
+            idMk int ,
+            name varchar(50),
+            timeStart time,
+            timeEnd time,
+            idRoom varchar (50),
+            kelas varchar(50) ,
+            type int,
+            hari int,
+            semester int
+        )');
     }
     /**
      * Reverse the migrations.
@@ -66,5 +78,6 @@ class AllTable extends Migration
         DB::statement('drop table Jadwals');
         DB::statement('drop table Mengajar');
         DB::statement('drop table Mahasiswa');
+        DB::statement('drop table tempMatKul');
     }
 }
