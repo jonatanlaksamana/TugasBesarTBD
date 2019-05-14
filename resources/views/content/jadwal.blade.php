@@ -248,7 +248,11 @@
       </header>
   
       <div class="cd-schedule-modal__body">
-        <div class="cd-schedule-modal__event-info"></div>
+        <div class="cd-schedule-modal__event-info">
+          <p> test</p>
+        </div>
+        
+        
         <div class="cd-schedule-modal__body-bg"></div>
       </div>
   
