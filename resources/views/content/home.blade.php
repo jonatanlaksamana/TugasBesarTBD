@@ -3,18 +3,20 @@
 <html>
 
 
-<body background="{{asset('/images/wall3.png')}}" style="width:98.67%;">
+<body background="{{asset('/images/wall0.png')}}" style="width:98.67%;">
 
 <div class="flip-card" style="border-radius:20px">
   <div class="flip-card-inner" style="border-radius:20px">
     <div class="flip-card-front" style="border-radius:20px">
-    <img src="{{asset('/images/crumpledpaper.jpg')}}" style="width:200px;height:200px; position:relative;border-radius:20px"  >
-      <p style="position: absolute;">Pilih Jadwal</p>
+    <img src="{{asset('/images/crumpledpaper2.jpg')}}" style="width:300px;height:400px; position:relative;border-radius:20px"  >
+      
       
     </div>
     <div class="flip-card-back" style="border-radius:20px">
-      <a href="{{url('pilihjadwal')}}">
+     
       <p>Memilih jadwal mengajar.</p>
+      <a href="{{url('pilihjadwal')}}">
+      <img src="{{asset('/images/scheduleStample.png')}}" style="width:200px;height:200px; position:relative;border-radius:150px"  >
       </a>
     </div>
   </div>
@@ -24,29 +26,34 @@
   <div class="flip-card-inner" style="border-radius:20px">
     <div class="flip-card-front" style="border-radius:20px">
     
-      <img src="{{asset('/images/crumpledpaper.jpg')}}" style="width:200px;height:200px; position:relative;border-radius:20px"  >
+      <img src="{{asset('/images/crumpledpaper1.jpg')}}" style="width:300px;height:400px; position:relative;border-radius:20px"  >
     
-      <p>Seluruh Jadwal</p>
+      
       
     </div>
+    
+
     <div class="flip-card-back" style="border-radius:20px">
-        <a href="{{url('jadwals/1')}}">
-      <p>Menapilkan seluruh jadwal mengajar.</p>
+    <p>Menapilkan seluruh jadwal mengajar.</p>
+    <a href="{{url('jadwals/1')}}">
+    <img src="{{asset('/images/scheduleStample.png')}}" style="width:200px;height:200px; position:relative;border-radius:150px"  >
     </a>
     </div>
+    
   </div>
 </div>
 
 <div class="flip-card" >
         <div class="flip-card-inner" style="border-radius:20px">
           <div class="flip-card-front" style="border-radius:20px">
-          <img src="{{asset('/images/crumpledpaper.jpg')}}" style="width:200px;height:200px; position:relative;border-radius:20px"  >
-                <p>Ganti Jadwal</p>
+          <img src="{{asset('/images/crumpledpaper3 .jpg')}}" style="width:300px;height:400px; position:relative;border-radius:20px"  >
+                <p>Jadwal Saya</p>
           </div>
           <div class="flip-card-back" style="border-radius:20px">
-            
-            <p>Mengganti jadwal untuk kelas pengganti.</p>
-            
+            <p>Melihat atau Mengganti jadwal untuk kelas pengganti.</p>
+            <a href="{{url('scheduleSaya')}}">
+            <img src="{{asset('/images/scheduleStample.png')}}" style="width:200px;height:200px; position:relative;border-radius:150px"  >
+            </a>
           </div>
         </div>
       </div>

@@ -2,22 +2,23 @@
     width: 150px;
     height: 50px;
     display: inline-block;
-    transform: skew(-30deg);
+    /* transform: skew(-30deg); */
     overflow: hidden;
     border-radius: 5px;
     margin-left: 7%;
+    background-color: #19191941
   }
   
   .orange-filled {
-    background-color: #ee6900;
+    background-color: #f09c00dc;
     color: #191919;
     transition: all 150ms ease-in-out;
   }
   
   .orange-outline {
     box-sizing: border-box;
-    border: 2px solid #ee6900;
-    color: #ee6900;
+    border: 2px solid #f09c00dc;;
+    color: #dad8d8;
     transition: all 150ms ease-in-out;
   }
   
@@ -29,7 +30,7 @@
   }
   
   .orange-outline:hover {
-    background-color: #ee6900;
+    background-color: #303030c7;
   }
   
   .orange-filled:hover {
@@ -49,7 +50,7 @@
   }
   
   .unskew {
-    transform: skew(30deg);
+    /* transform: skew(30deg); */
     line-height: 50px;
   }
   

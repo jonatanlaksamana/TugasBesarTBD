@@ -5,12 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     
     
-    <link rel="stylesheet" href="{{asset('/css/headerStyle.css')}}"> 
+    <link rel="stylesheet" href="{{asset('/css/headerStyle2.css')}}"> 
     <link rel="stylesheet" href="{{asset('/bootstrap/dist/css/bootstrap.css')}}">
 </head>
 <body>
 
-    @include('content/header')
+    @include('content/header2')
     @yield('content')
 
 
