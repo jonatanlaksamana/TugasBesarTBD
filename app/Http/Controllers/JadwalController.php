@@ -33,9 +33,6 @@ class JadwalController extends Controller
             DB::statement("CALL insertTempMatkul($id)" );
         }
         return "check db boss";
-
-
-
     }
   
 }
