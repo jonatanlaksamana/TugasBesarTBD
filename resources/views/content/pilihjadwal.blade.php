@@ -10,7 +10,7 @@
     <form action="{{route('pilih.jadwal')}}" method="post">
         @csrf
         @foreach($matkul as $parent)
-            <div class="card" style="margin-top:-10px;width:100.6815%;">
+            <div class="card" style="margin-top:-10px;width:100%;">
                 <div class="card-header" id="headingOne" style="background-image: url(../../../images/head4.jpg);">
                     <h5 class="mb-0">
                         <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#{{$parent->name}}" aria-expanded="true" aria-controls="collapseOne" style="color:white;font-weight:600;">
@@ -58,19 +58,21 @@
         @endforeach
                 <div style="background-image:url(../../../images/head8.png);">
                     <input type="submit" class="btn btn-primary btn-lg btn-block" style="margin-bottom:13px;margin-top:13px;width:38%;margin-left:50%;border-radius:30px;float:left" value="Konfirmasi Pilihan Mata Kuliah">
-{{--                    <button type="button" class="btn btn-secondary btn-lg btn-block" style="margin-bottom:13px;margin-top:-4.1%;width:38%;margin-left:8%;border-radius:30px;;float:left">Pilih Ulang Mata Kuliah</button>--}}
+{{--                    <button type="button" class="btn btn-secondary btn-lg btn-block" style="margin-bottom:13px;margin-top:-4.1%;width:38%;margin-left:8%;border-radius:30px;;float:left">Konfirmasi</button>--}}
                 </div>
 
       </div>
      
     </div>
      
+
     
   </div>
   <div style="background-image:url(../../../images/head8.png);">
     {{-- <button type="button" class="btn btn-primary btn-lg btn-block" style="margin-bottom:13px;margin-top:13px;width:38%;margin-left:50%;border-radius:30px;float:left">Konfirmasi Pilihan Mata Kuliah</button>   --}}
     <button type="button" class="btn btn-secondary btn-lg btn-block" style="margin-bottom:13px;margin-top:-4.1%;width:38%;margin-left:8%;border-radius:30px;;float:left">Pilih Ulang Mata Kuliah</button>   
   </div>
+  
 
 </body>   
 
