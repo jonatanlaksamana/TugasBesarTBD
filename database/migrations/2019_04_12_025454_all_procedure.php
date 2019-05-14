@@ -25,7 +25,7 @@ class AllProcedure extends Migration
 
         DB::unprepared("DROP procedure IF EXISTS call_bentrok");
         DB::unprepared('
-        CREATE  PROCEDURE call_bentrok( id INT)
+        CREATE  PROCEDURE call_bentrok( )
         BEGIN
         call find_bentrok();
         select * from bentrok_table ;  
@@ -78,7 +78,7 @@ class AllProcedure extends Migration
             CLOSE activity_cursor;
             
             
-                select * from result_table where id>1 ;   	
+              	
     END
 
         ');
@@ -98,7 +98,7 @@ class AllProcedure extends Migration
             select name,timeStart,timeEnd,kelas,type,hari,semester from tempmatkul order by type,timeEnd;
         DECLARE CONTINUE HANDLER FOR NOT FOUND set isLoop = true; 
         OPEN activity_cursor;
-              CREATE TEMPORARY TABLE result_table(
+              CREATE TEMPORARY TABLE result_table_bentrok(
              id int PRIMARY KEY AUTO_INCREMENT,
             name varchar(255),
             waktuMulai time DEFAULT \'00:00:00\',
@@ -120,7 +120,7 @@ class AllProcedure extends Migration
             semester int DEFAULT 0
           
           ); 
-          INSERT INTO result_table (name) VALUES (\'dummy\'); 
+          INSERT INTO result_table_bentrok (name) VALUES (\'dummy\'); 
      
         activity_loop : LOOP
        FETCH FROM activity_cursor INTO matakuliah_name,startTime,endTime,kelas_,tipe_,hari_,semester_;
@@ -128,11 +128,11 @@ class AllProcedure extends Migration
             if isLoop THEN
                 LEAVE activity_loop;
             END IF;
-            select waktuSelesai into waktuSelesaiResult from result_table ORDER BY id DESC LIMIT 1;
-            select hari into hariResult from result_table ORDER BY id DESC LIMIT 1;
+            select waktuSelesai into waktuSelesaiResult from result_table_bentrok ORDER BY id DESC LIMIT 1;
+            select hari into hariResult from result_table_bentrok ORDER BY id DESC LIMIT 1;
     
            if startTime >= waktuSelesaiResult or hari_ != hariResult  then 
-            INSERT INTO result_table (name,waktuMulai,waktuSelesai,kelas,tipe,hari,semester)  VALUES (matakuliah_name,startTime,endTime,kelas_,tipe_,hari_,semester_); 
+            INSERT INTO result_table_bentrok (name,waktuMulai,waktuSelesai,kelas,tipe,hari,semester)  VALUES (matakuliah_name,startTime,endTime,kelas_,tipe_,hari_,semester_); 
            ELSE
             INSERT INTO bentrok_table (name,waktuMulai,waktuSelesai,kelas,tipe,hari,semester)  VALUES (matakuliah_name,startTime,endTime,kelas_,tipe_,hari_,semester_); 
            
@@ -140,10 +140,7 @@ class AllProcedure extends Migration
             
        
         END LOOP activity_loop;
-        CLOSE activity_cursor;
-        
-        
-            select * from bentrok_table ;     	
+        CLOSE activity_cursor;    	
     END
 
         ');

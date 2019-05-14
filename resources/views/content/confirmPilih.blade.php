@@ -46,25 +46,20 @@
           </tr>
         </thead>
         <tbody>
-          <tr>
-            <th scope="row">1</th>
-            <td>PBO</td>
-            <td>A</td>
-            <td>Kelas</td>
-            <td>Senin</td>
-            <td>07:00:00</td>
-            <td>09:00:00</td>
-          </tr>
-          <tr>
-            <th scope="row">2</th>
-            <td>DAA</td>
-            <td>A</td>
-            <td>Kelas</td>
-            <td>Selasa</td>
-            <td>07:00:00</td>
-            <td>09:00:00</td>
-          </tr>
-        </tbody>
+            @for ($i = 0; $i < sizeof($jadwalTidakBentrok); $i++)
+            <tr>
+                <th scope="row">{{$jadwalTidakBentrok[$i]->id}}</th>
+                <td>{{$jadwalTidakBentrok[$i]->name}}</td>
+                <td>{{$jadwalTidakBentrok[$i]->kelas}}</td>
+                <td>{{$jadwalTidakBentrok[$i]->tipe}}</td>
+                <td>{{$jadwalTidakBentrok[$i]->hari}}</td>
+                <td>{{$jadwalTidakBentrok[$i]->waktuMulai}}</td>
+                <td>{{$jadwalTidakBentrok[$i]->waktuSelesai}}</td>
+              </tr>
+      
+      
+              @endfor
+            </tbody>
       </table>
 
       <a href="#" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Konfirmasi Jadwal</a>
