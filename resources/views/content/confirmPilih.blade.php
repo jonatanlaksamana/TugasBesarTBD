@@ -16,24 +16,19 @@
         </tr>
       </thead>
       <tbody>
-        <tr>
-          <th scope="row">1</th>
-          <td>PBO</td>
-          <td>A</td>
-          <td>Kelas</td>
-          <td>Senin</td>
-          <td>07:00:00</td>
-          <td>09:00:00</td>
+      @for ($i = 0; $i < sizeof($jadwalBentrok); $i++)
+      <tr>
+          <th scope="row">{{$jadwalBentrok[$i]->id}}</th>
+          <td>{{$jadwalBentrok[$i]->name}}</td>
+          <td>{{$jadwalBentrok[$i]->kelas}}</td>
+          <td>{{$jadwalBentrok[$i]->tipe}}</td>
+          <td>{{$jadwalBentrok[$i]->hari}}</td>
+          <td>{{$jadwalBentrok[$i]->waktuMulai}}</td>
+          <td>{{$jadwalBentrok[$i]->waktuSelesai}}</td>
         </tr>
-        <tr>
-          <th scope="row">2</th>
-          <td>DAA</td>
-          <td>A</td>
-          <td>Kelas</td>
-          <td>Selasa</td>
-          <td>07:00:00</td>
-          <td>09:00:00</td>
-        </tr>
+
+
+        @endfor
       </tbody>
     </table>
 

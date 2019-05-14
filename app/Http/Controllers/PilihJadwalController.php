@@ -16,9 +16,9 @@ class PilihJadwalController extends Controller
     }
 
     public function konfirmasi(){
-     $jadwalBentrok =   DB::select("CALL Find_Bentrok()");
-        return $jadwalBentrok;
-        // return view('content.confirmPilih');
+     $jadwalBentrok =   DB::select("CALL call_bentrok()");
+       
+         return view('content.confirmPilih' , compact('jadwalBentrok'));
 
     }
 }
