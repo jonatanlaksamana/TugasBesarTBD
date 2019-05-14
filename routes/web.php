@@ -22,4 +22,3 @@ Route::get('/scheduleSaya','MyScheduleController@index')->name('schedule.choose'
 Route::post('/test' , 'JadwalController@pilihJadwal')->name('pilih.jadwal');
 
 Route::get('/konfirmasiPilihan','PilihJadwalController@konfirmasi')->name('schedule.choose');
-
