@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 use App\JadwalModel;
 use Illuminate\Support\Facades\Cache;
+use App\UserModel;
 class JadwalController extends Controller
 {
     //
@@ -41,6 +42,9 @@ class JadwalController extends Controller
         $janto = Cache::get('auth');
         $idUser = $janto[0]->id;
         $jadwalBentrok =   DB::select("call call_bentrok_schedule($idUser)");
+        if(sizeof($jadwalBentrok) == 0){
+            UserModel::toggleIsFill($idUser);
+        }
         return view('content.notifSchedule' , compact('jadwalBentrok','janto'));
     }
 
