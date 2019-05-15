@@ -162,8 +162,7 @@ class AllProcedure extends Migration
         DB::unprepared('
         CREATE  PROCEDURE call_bentrok_schedule( idUser INT)
         BEGIN
-            	call isiMengajar(idUser);
-select users.nama , matakuliah.name ,jadwals.kelas , jadwals.timeStart, jadwals.timeEnd,jadwals.hari,jadwals.idRoom from result_table join jadwals on result_table.idJadwal = jadwals.id join users on users.id = result_table.idUser join matakuliah  on matakuliah.id = jadwals.idMk;
+            	select users.nama , matakuliah.name ,jadwals.kelas , jadwals.timeStart, jadwals.timeEnd,jadwals.hari,jadwals.idRoom from result_table join jadwals on result_table.idJadwal = jadwals.id join users on users.id = result_table.idUser join matakuliah  on matakuliah.id = jadwals.idMk where result_table.idUser = idUser;
         END
         ');
 

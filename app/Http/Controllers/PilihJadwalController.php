@@ -32,13 +32,13 @@ class PilihJadwalController extends Controller
         $janto = Cache::get('auth');
      $jadwalBentrok =   DB::select("CALL call_bentrok()");
      $jadwalTidakBentrok = DB::select("CALL call_schedule()");
+
      return view('content.confirmPilih' , compact('jadwalBentrok','jadwalTidakBentrok','janto'));
     }
 
     public function isiJadwal(){
         $janto = Cache::get('auth');
         $idUser = $janto[0]->id;
-        UserModel::toggleIsFill($idUser);
         DB::statement("CALL  isiMengajar($idUser)" );
 
 
