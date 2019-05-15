@@ -17,6 +17,8 @@ class PilihJadwalController extends Controller
         $janto = $userLogin;
 
         if($userLogin[0]->isFill == 0){
+            JadwalModel::truncateTableBentrok();
+            JadwalModel::truncateTableBentrok2();
             $matkul = Matakuliah::whereNull('semester')->with('children')->get();
             return view('content.pilihjadwal' , compact('matkul','janto'));
         }

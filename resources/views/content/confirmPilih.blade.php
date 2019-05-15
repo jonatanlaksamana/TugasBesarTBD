@@ -98,10 +98,17 @@
       </table>
     <form action="{{route('isi.Jadwal')}}" method="POST">
       @csrf
+
+        @if(sizeof($jadwalBentrok) == 0 )
           <input type="submit" class="btn btn-primary btn-lg active"  aria-pressed="true" value="oke!!">
+
       </form>
-      
-      <a href="#" class="btn btn-secondary btn-lg active" role="button" aria-pressed="true">Pilih Ulang Mata Kuliah</a>
+  @else
+      <input type="submit" class="btn btn-primary btn-lg active disabled"  disabled aria-pressed="true" value="Masih ada bentrok">
+
+  @endif
+
+  <a href="{{route('pilihJadwal.choose')}}" class="btn btn-success btn-lg">Back</a>
 </body>
 </html>
 

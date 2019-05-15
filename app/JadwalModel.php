@@ -10,6 +10,13 @@ class JadwalModel extends Model
     //
     protected $table = 'jadwals';
 
+
+    public static function truncateTableBentrok(){
+        return DB::statement('truncate table result_table');
+    }
+    public static function truncateTableBentrok2(){
+        return DB::statement('truncate table tempmatkul');
+    }
     public static function toggleIsSelected($id){
         return DB::statement("update jadwals set isSelected = 1  where id = $id");
     }
