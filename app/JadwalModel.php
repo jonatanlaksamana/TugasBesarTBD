@@ -10,6 +10,10 @@ class JadwalModel extends Model
     //
     protected $table = 'jadwals';
 
+    public static function toggleIsSelected($id){
+        return DB::statement("update jadwals set isSelected = 1  where id = $id");
+    }
+
     public static function getAll9120($id){
 
         return DB::select(

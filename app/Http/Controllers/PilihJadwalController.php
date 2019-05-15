@@ -7,6 +7,7 @@ use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Cache;
 use App\UserModel;
 use App\Matakuliah;
+use App\JadwalModel;
 class PilihJadwalController extends Controller
 {
     //
@@ -38,12 +39,9 @@ class PilihJadwalController extends Controller
         $janto = Cache::get('auth');
         $idUser = $janto[0]->id;
         UserModel::toggleIsFill($idUser);
+        DB::statement("CALL  isiMengajar($idUser)" );
 
 
-        $arrJadwal=  DB::select("CALL call_schedule()");
-        foreach($arrJadwal as  $jadwal){
-            DB::statement("CALL isiTempMengajar($jadwal->idJadwal,$idUser)" );
-        }
         return redirect()->route('home.menu');
     }
 }

@@ -43,7 +43,8 @@ class AllTable extends Migration
             timeEnd time,
             kelas varchar(1),
             durasi int,
-            prioritas int
+            prioritas int,
+            isSelected boolean default  false
         )');
 
         DB::statement('create table Mengajar(
@@ -68,12 +69,18 @@ class AllTable extends Migration
             kelas varchar(50) ,
             type int,
             hari int,
-            semester int
+            semester int,
+            isSelected int
         )');
         DB::statement('create table tempMengajar(
             idJadwal int ,
             idUser int
         )');
+        DB::statement('create table result_table(
+            idJadwal int ,
+            idUser int
+        )');
+
 
     }
     /**

@@ -16,16 +16,17 @@
         </tr>
         </thead>
         <tbody>
+
         @for ($i = 0; $i < sizeof($jadwalBentrok); $i++)
             <tr>
-                <th scope="row">{{$jadwalBentrok[$i]->namaDosen}}</th>
-                <td>{{$jadwalBentrok[$i]->namaMK}}</td>
+                <th scope="row">{{$jadwalBentrok[$i]->nama}}</th>
+                <td>{{$jadwalBentrok[$i]->name}}</td>
                 <td>{{$jadwalBentrok[$i]->kelas}}</td>
                 <td>
-                    {{$jadwalBentrok[$i]->waktuMulai}}
+                    {{$jadwalBentrok[$i]->timeStart}}
                 </td>
                 <td>
-                    {{$jadwalBentrok[$i]->waktuSelesai}}
+                    {{$jadwalBentrok[$i]->timeEnd}}
                 </td>
                 <td>  @if($jadwalBentrok[$i]->hari == 1)
                         Senin

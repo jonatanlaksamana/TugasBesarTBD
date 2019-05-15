@@ -16,16 +16,17 @@
         </tr>
         </thead>
         <tbody>
+
         @for ($i = 0; $i < sizeof($mySchedule); $i++)
             <tr>
-                <th scope="row">{{$mySchedule[$i]->namaDosen}}</th>
-                <td>{{$mySchedule[$i]->namaMK}}</td>
+                <th scope="row">{{$mySchedule[$i]->name}}</th>
+                <td>{{$mySchedule[$i]->name}}</td>
                 <td>{{$mySchedule[$i]->kelas}}</td>
                 <td>
-                    {{$mySchedule[$i]->waktuMulai}}
+                    {{$mySchedule[$i]->timeStart}}
                 </td>
                 <td>
-                    {{$mySchedule[$i]->waktuSelesai}}
+                    {{$mySchedule[$i]->timeEnd}}
                 </td>
                 <td>  @if($mySchedule[$i]->hari == 1)
                         Senin
